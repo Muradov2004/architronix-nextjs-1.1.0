@@ -15,8 +15,8 @@ const Header = () => {
                         <div className='flex justify-between items-center py-3'>
                             <Logo height={"31"} width={"219"} />
                         </div>
-                        <Link href={"https://themeforest.net/item/architronix-nextjs-creative-interior-exterior-architecture-business-templates-by-tailwind-css/51303546"} className='hidden sm:inline-block mt-5 sm:mt-0'>
-                            <ButtonFill className={"gap-3 after:left-0"}>Buy Architronix <RightArrow width={"35"} height={"22"} /> </ButtonFill>
+                        <Link href={"https://themeforest.net/item/Azali-nextjs-creative-interior-exterior-architecture-business-templates-by-tailwind-css/51303546"} className='hidden sm:inline-block mt-5 sm:mt-0'>
+                            <ButtonFill className={"gap-3 after:left-0"}>Buy Azali <RightArrow width={"35"} height={"22"} /> </ButtonFill>
                         </Link>
                     </div>
                 </div>

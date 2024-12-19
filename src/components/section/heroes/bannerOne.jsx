@@ -46,18 +46,18 @@ const BannerOne = ({ data, text_muted, bg_muted }) => {
         {
           data.map(({ id, banner_img, heading_one, heading_two }) => {
             return (
-              <SwiperSlide key={id} className='relative ' >
-                <div className='bg-cover bg-no-repeat  h-[90vh]' style={{ backgroundImage: `url(${banner_img.src})` }}>
+              <SwiperSlide key={id} className='relative' >
+                <div className='bg-cover bg-no-repeat h-[90vh]' style={{ backgroundImage: `url(${banner_img.src})` }}>
                   <div className='container '>
                     <div className='xl:pt-[200px] pt-[150px] pb-[250px]'>
                       <div>
                         <h1 className='text-white hidden [font-size:_clamp(60px,10vw,150px)] font-extrabold leading-[90%] h-full'>
                           <TextTyped text={[ 'Rahatlıq', 'Gözəllik', 'Zövq  ']} />
                           <br />
-                           Hər bir detalda  
+                           ər bir detalda  
                            <br/>
 
-                           <TextTyped text={[ 'Gizlidir', 'Yaşayır', 'Hiss olunur']} />
+                           <TextTyped text={[ 'gizlidir', 'yaşayır', 'hiss olunur']} />
                         </h1>
                         {/* <Link href="https://wa.link/7sfqml" className="mt-10 inline-block">
                           <ButtonFill className={cn(`after:z-[1] sm:px-10 px-4 after:left-0 after:${bg_muted} `)}>
@@ -81,13 +81,13 @@ const BannerOne = ({ data, text_muted, bg_muted }) => {
           </div>
         </div>
       </Swiper>
-      <div className="absolute inset-0 flex flex-col items-start container justify-center text-center z-30 pointer-events-none xl:pt-[200px] pt-[160px] pb-[150px] ">
-        <h1 className='text-white [font-size:_clamp(60px,10vw,150px)] font-extrabold leading-[90%] '>
+      <div className="absolute inset-0 flex flex-col container justify-center text-center z-30 pointer-events-none xl:pt-[200px] pt-[160px] pb-[150px]">
+        <h1 className='text-white [font-size:_clamp(60px,10vw,110px)] font-extrabold leading-[90%]'>
           <TextTyped text={['Rahatlıq', 'Gözəllik', 'Zövq']} />
           <br />
-          Hər bir detalda
+          hər bir detalda
           <br />
-          <TextTyped text={['Gizlidir', 'Yaşayır', 'Hiss olunur']} />
+          <TextTyped text={['gizlidir', 'yaşayır', 'hiss olunur']} />
         </h1>
         <Link href="https://wa.link/7sfqml" className="mt-10 inline-block">
                           <ButtonFill className={cn(`after:z-[1] sm:px-10 px-4 after:left-0 after:${bg_muted} `)}>

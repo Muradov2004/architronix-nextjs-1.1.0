@@ -23,7 +23,7 @@ const Footer = () => {
                                 <h5 className='text-2xl font-extrabold block text-primary-foreground leading-160 '>Keçidlər:</h5>
                                 <span className='w-[99px] h-[1px] bg-primary block my-2.5'></span>
                                 <div className=''>
-                                    {/* <p className='text-xl font-bold text-primary-foreground'>Architronix, </p> */}
+                                    {/* <p className='text-xl font-bold text-primary-foreground'>Azali, </p> */}
                                     <p className='text-lg  text-primary-foreground'>Haqqımızda </p>
                                     <p className='text-lg text-primary-foreground'>Məhsullarımız </p>
                                     <p className='text-lg  text-primary-foreground'>Referans</p>
@@ -33,7 +33,7 @@ const Footer = () => {
                                 </div>
                                 {/* <div className='mt-[17px]'>
                                     <Link href={"tel:+34962398486"} className='text-lg block text-primary-foreground hover-underline' >Phone: <span>+34 96 239 84 86</span></Link>
-                                    <Link href={"mailto:hello@architronix.com"} className='text-lg block text-primary-foreground hover-underline'>Email: <span>hello@architronix.com</span></Link>
+                                    <Link href={"mailto:hello@Azali.com"} className='text-lg block text-primary-foreground hover-underline'>Email: <span>hello@Azali.com</span></Link>
                                 </div> */}
                             </div>
                         </div>
@@ -50,7 +50,7 @@ const Footer = () => {
                                 </div>
                                 <div className='mt-[17px]'>
                                     <Link href={"tel:+34962398486"} className='text-lg block text-primary-foreground hover-underline' >Telefon: <span>+994 50 227 90 20</span></Link>
-                                    <Link href={"mailto:hello@architronix.com"} className='text-lg block text-primary-foreground hover-underline'>E-poçt: <span>info@azali.az</span></Link>
+                                    <Link href={"mailto:hello@Azali.com"} className='text-lg block text-primary-foreground hover-underline'>E-poçt: <span>info@azali.az</span></Link>
                                 </div>
                             </div>
                         </div>

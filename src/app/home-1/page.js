@@ -20,8 +20,8 @@ import { cardSlideAnimation } from '@/lib/utils'
 import { bannerOneData } from '@/lib/fackData/bannerOneData'
 
 export const metadata = {
-  title: "Architronix -- Home-1",
-  description: "Architronix is a next js and tailwind css website",
+  title: "Azali -- Home-1",
+  description: "Azali is a next js and tailwind css website",
 };
 
 const Home1 = () => {
@@ -35,7 +35,7 @@ const Home1 = () => {
       <Gallery/>
 
       <section className='pt-20'>
-        <div className='container-fluid '>
+        <div className='container-fluid'>
           <SectionTitle
             sectionName={"Azali"}
             sectionTitle={"Komandamız"}

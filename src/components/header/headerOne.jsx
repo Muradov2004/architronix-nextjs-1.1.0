@@ -15,7 +15,7 @@ const HeaderOne = () => {
 
         <div className='border-border border-t border-b hidden xl:block'>
           <div className='container-fluid'>
-            <BottomNavbar />
+            <BottomNavbar linkColor={true} />
           </div>
         </div>
         

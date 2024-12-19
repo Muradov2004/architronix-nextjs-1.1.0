@@ -10,8 +10,8 @@ import Faq from '@/components/section/faq'
 import Feedback from '@/components/section/feedback'
 
 export const metadata = {
-  title: "Architronix -- Services",
-  description: "Architronix is a next js and tailwind css website",
+  title: "Azali -- Services",
+  description: "Azali is a next js and tailwind css website",
 };
 
 const Services = () => {

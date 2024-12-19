@@ -17,8 +17,8 @@ import TeamCardOne from '@/components/ui/cards/teamCardOne'
 import { cardSlideAnimation } from '@/lib/utils'
 
 export const metadata = {
-  title: "Architronix -- Home-2",
-  description: "Architronix is a next js and tailwind css website",
+  title: "Azali -- Home-2",
+  description: "Azali is a next js and tailwind css website",
 };
 const Home2 = () => {
   return (
@@ -33,7 +33,7 @@ const Home2 = () => {
         <div className='container-fluid '>
           <SectionTitle
             sectionName={"Team"}
-            sectionTitle={"Architects of Architronix"}
+            sectionTitle={"Architects of Azali"}
             sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"}
             button_text={"All Architects"}
             link={"/team"}
