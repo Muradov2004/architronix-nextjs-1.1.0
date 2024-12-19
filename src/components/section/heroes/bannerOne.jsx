@@ -51,7 +51,7 @@ const BannerOne = ({ data, text_muted, bg_muted }) => {
                   <div className='container '>
                     <div className='xl:pt-[200px] pt-[150px] pb-[250px]'>
                       <div>
-                        <h1 className='text-white hidden [font-size:_clamp(60px,10vw,150px)] font-extrabold leading-[90%] h-full'>
+                        <h1 className='text-white hidden [font-size:_clamp(60px,10vw,130px)] font-extrabold leading-[90%] h-full'>
                           <TextTyped text={[ 'Rahatlıq', 'Gözəllik', 'Zövq  ']} />
                           <br />
                            ər bir detalda  
