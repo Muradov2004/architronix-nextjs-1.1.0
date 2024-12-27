@@ -17,7 +17,7 @@ const ProjectArchive = () => {
             <div className='lg:pt-30 2sm:pt-20 pt-14'>
                 <div className=''>
                     {
-                        referansGalleryData.map(({ id, project_desc, project_img, project_name, project_year, project_type, location, link }) => {
+                        referansGalleryData.map(({ id, project_desc, project_img, project_name, project_year, project_type, location, link  ,project_img1,project_img2,project_img3,project_img4,project_img5,project_img6,project_img7,project_img8,project_img9}) => {
                             if (id % 2 === 0) {
                                 return (
                                     <ProjectCardOne

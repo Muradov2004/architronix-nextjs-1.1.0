@@ -12,6 +12,8 @@ import ButtonFill from "../ui/buttons/buttonFill";
 import { projectsData } from "@/lib/fackData/projectsData";
 import SectionTitle from "../ui/sectionTitle";
 import Image from "next/image";
+import { referanceData } from "@/lib/fackData/referanceData";
+import { log } from "react-modal/lib/helpers/ariaAppHider";
 
 const ReferanceSlider = ({ text_muted, bg_muted }) => {
   const [showLetterOpenImage, setShowLetterOpenImage] = useState(false);
@@ -51,7 +53,7 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
           }
         />
       </div>
-      <div className="container-fluid relative  lg:pt-10 2sm:pt-8 pt-5">
+      <div className="container-fluid relative mt-20  lg:pt-10 2sm:pt-8 pt-5">
         <Swiper
           slidesPerView={1}
           loop
@@ -64,20 +66,20 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
           }}
           modules={[Pagination, Navigation, Autoplay]}
         >
-          {projectsData.map(
-            ({ id, area, client, project_img, project_type, project_year }) => (
+          {referanceData.map(
+            ({ id, logo, letter, project_img, project_type, project_year }) => (
               <SwiperSlide key={id}>
-                <div className="relative flex flex-col   mr-[20%] md:mr-0 min-w-96 lg:flex-row h-auto lg:h-[600px] border-b ">
+                <div className="relative  flex flex-col   mr-[20%] md:mr-0 min-w-96 lg:flex-row h-full lg:h-[600px] border-b ">
                   {/* Sol taraf: Resim */}
                   <div className="w-full lg:w-1/2 h-full bg-cover bg-no-repeat relative flex justify-center items-center flex-col lg:-mt-8 p-4">
                     <div className="md:ml-20  mr-[20%] md:mr-0">
                       <Image
-                        src={Steam}
+                        src={logo}
                         alt="Steam"
                         className="w-full h-auto max-w-[400px] lg:max-w-[500px]" // Responsive boyutlandırma
                       />
                     </div>
-                    <div className="flex justify-center xl:justify-start items-center xl:items-end flex-col xl:flex-row gap-5 md:ml-20">
+                    <div className="flex justify-center xl:justify-start items-center xl:items-end flex-col xl:flex-row gap-5 md:ml-20 mt-5">
                       <div className="flex items-end sm:gap-5 gap-2">
                         <div onClick={() => swiperRef.current?.slidePrev()}>
                           <ButtonFill
@@ -119,13 +121,13 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
                     {showLetterOpenImage && (
                       <div className="relative flex justify-center items-center mt-5 lg:mt-0 mr-[15%] md:mr-0">
                         <Image
-                          src={LetterOpen}
+                          src={letter}
                           alt="Letter Open"
                           className="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px]"
                         />
                         <button
                           onClick={handleCloseLetter}
-                          className="absolute top-2 right-2 bg-black text-white p-2 rounded-full text-sm"
+                          className="absolute top-10 right-2 bg-black text-white p-2 rounded-full text-sm"
                         >
                           X
                         </button>
@@ -137,6 +139,7 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
             )
           )}
         </Swiper>
+        
       </div>
     </section>
   );

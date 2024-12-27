@@ -208,6 +208,8 @@ const Testimonial = ({ text_muted, bg_muted,check }) => {
           sectionDesc={"Tərəfdaşlarımız bizim üçün uğurumuzun təməlidir."}
           bg_muted={bg_muted}
           text_muted={text_muted}
+          button_text={"Daha Ətraflı"}
+          link={"/referance"}
         />
         }
         <div className="lg:pt-30 2sm:pt-20 pt-14">

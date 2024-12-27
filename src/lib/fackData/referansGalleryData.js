@@ -12,15 +12,15 @@ import project_img_11 from "@/assets/images/project-istanbul.jpg"
 
 
 import madoReferance from "@/assets/layiheler/referans-mado.jpg"
-import mado1 from "@/assets/layiheler/referans-mado.jpg"
-import mado2 from "@/assets/layiheler/referans-mado.jpg"
-import mado3 from "@/assets/layiheler/referans-mado.jpg"
-import mado4 from "@/assets/layiheler/referans-mado.jpg"
-import mado5 from "@/assets/layiheler/referans-mado.jpg"
-import mado6 from "@/assets/layiheler/referans-mado.jpg"
-import mado7 from "@/assets/layiheler/referans-mado.jpg"
-import mado8 from "@/assets/layiheler/referans-mado.jpg"
-import mado9 from "@/assets/layiheler/referans-mado.jpg"
+import mado1 from "@/assets/layiheler/project-mado-1.jpg"
+import mado2 from "@/assets/layiheler/project-mado-2.jpg"
+import mado3 from "@/assets/layiheler/project-mado-3.jpg"
+import mado4 from "@/assets/layiheler/project-mado-4.jpg"
+import mado5 from "@/assets/layiheler/project-mado-5.jpg"
+import mado6 from "@/assets/layiheler/project-mado-6.jpg"
+import mado7 from "@/assets/layiheler/project-mado-7.jpg"
+import mado8 from "@/assets/layiheler/project-mado-8.jpg"
+import mado9 from "@/assets/layiheler/project-mado-9.jpg"
 
 
 import boraniReferance from "@/assets/layiheler/referans-borani.jpg"
@@ -194,15 +194,15 @@ export const referansGalleryData = [
         project_type: "Interior design",
         link: "/project-single",
         location:"Sao Paulo, Brazil",
-        project_img1:project_img_1,
-        project_img2:project_img_1,
-        project_img3:project_img_1,
-        project_img4:project_img_1,
-        project_img5:project_img_1,
-        project_img6:project_img_1,
-        project_img7:project_img_1,
-        project_img8:project_img_1,
-        project_img9:project_img_1,
+        project_img1:mado1,
+        project_img2:mado2,
+        project_img3:mado3,
+        project_img4:mado4,
+        project_img5:mado5,
+        project_img6:mado6,
+        project_img7:mado7,
+        project_img8:mado8,
+        project_img9:mado9,
     },
     {
         id: 2,

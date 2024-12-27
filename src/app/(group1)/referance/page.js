@@ -1,3 +1,4 @@
+import Feedback from "@/components/section/feedback";
 import ReferanceSlider from "@/components/section/ReferanceSlider";
 import Testimonial from "@/components/section/testimonial";
 import SectionTitle from "@/components/ui/sectionTitle";
@@ -12,6 +13,7 @@ const Referance = () => {
     <div className="-mt-32 md:-mt-48 mb-32">
       <Testimonial check={true} />
     </div>
+    <Feedback/>
   </div>
   );
 };

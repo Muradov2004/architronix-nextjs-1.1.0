@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import Logo from '@/assets/icons/logo'
+import Logo2 from '@/assets/icons/azali.png';
 import MenuIcon from '@/assets/icons/menuIcon'
 import { IoMdClose } from "react-icons/io";
 import { menuList } from '@/lib/fackData/menuList'
@@ -12,6 +12,7 @@ import Offcanvas from './offCanvas'
 import Cart from './cart'
 import { useSelector } from 'react-redux'
 import useOverflowHidden from '@/hooks/useOverflowHidden'
+import Image from 'next/image';
 
 const MobileNavbar = () => {
     const { products } = useSelector((state) => state.addToCart)
@@ -41,15 +42,19 @@ const MobileNavbar = () => {
             <div className='bg-[#f9f9f9] relative overflow-x-clip px-2.5'>
                 <div className='container-fluid '>
                     <div className='flex items-center justify-between py-4'>
-                        <Link href={"/"} className='text-primary-foreground'>
-                            <Logo height={"31"} width={"219"} />
-                        </Link>
+                    <div>
+                    <Link href="/home-1" className={cn(`logo text-primary-foreground `)}>
+                        <Image src={Logo2} alt="Logo" height="11" width="100" />
+                    </Link>
+                </div>
                         <div>
                             <nav className={`max-h-screen min-h-screen overflow-y-auto bg-[#F9FFFC] absolute transition-all duration-500 ${isMenuActive ? "right-0" : "sm:-right-full -right-[150%]"} top-0 z-50 py-4 px-4`}>
                                 <div className='flex justify-between items-center'>
-                                    <Link href={"/"} className='text-primary-foreground'>
-                                        <Logo height={"31"} width={"219"} />
-                                    </Link>
+                                <div>
+                    <Link href="/home-1" className={cn(`logo text-primary-foreground `)}>
+                        <Image src={Logo2} alt="Logo" height="11" width="100" />
+                    </Link>
+                </div>
                                     <div onClick={() => setIsMenuActive(false)}>
                                         <IoMdClose className='text-2xl cursor-pointer' />
                                     </div>

@@ -6,7 +6,7 @@ import ButtonFill from '../buttons/buttonFill'
 import Link from 'next/link'
 import { staticBluarDataUrl } from '@/lib/staticBluarDataUrl'
 
-const ProjectCardOne = ({ order, position, project_year, project_desc, project_img, location, project_type, project_name, link, imageVariants, cardVariants }) => {
+const ProjectCardOne = ({ order, position, project_year, project_desc, project_img, location, project_type, project_name, link, imageVariants, cardVariants ,project_img1,project_img2,project_img3,project_img4,project_img5,project_img6,project_img7,project_img8,project_img9}) => {
     return (
         <div className='xl:max-w-[95%] w-full mx-auto relative overflow-hidden '>
             <div className='container'>
