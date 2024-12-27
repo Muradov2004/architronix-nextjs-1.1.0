@@ -121,7 +121,7 @@ export const referansGalleryData = [
         link: "/project-single",
         location:"US"
     }, {
-        id: 5,
+        id: 4,
         project_name: "Zabrat Mall",
         project_img: project_img_5,
         project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
@@ -143,7 +143,7 @@ export const referansGalleryData = [
         link: "/project-single",
         location:"US"
     }, {
-        id: 5,
+        id: 6,
         project_name: "Zabrat Mall",
         project_img: project_img_5,
         project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
