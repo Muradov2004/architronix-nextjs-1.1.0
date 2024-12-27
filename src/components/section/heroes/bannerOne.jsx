@@ -83,11 +83,17 @@ const BannerOne = ({ data, text_muted, bg_muted }) => {
           <br />
           {data[currentSlide].heading_two && <TextTyped text={[data[currentSlide].heading_two]} />}
         </h1>
-        <Link href="https://wa.link/7sfqml" className="mt-20 inline-block z-50">
-          <ButtonFill className={cn(`after:z-[1] sm:px-10 px-4 after:left-0 after:${bg_muted} `)}>
-            <span className="relative z-10">Müraciət</span>
-          </ButtonFill>
-        </Link>
+        <a
+      href="https://wa.link/7sfqml"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-20 inline-block z-50 pointer-events-auto"
+    >
+      <ButtonFill className={cn(`after:z-[1] sm:px-10 px-4 after:left-0 after:${bg_muted}`)}>
+        <span className="relative z-10">Müraciət</span>
+      </ButtonFill>
+    </a>
+  
       </div>
     </section>
   )

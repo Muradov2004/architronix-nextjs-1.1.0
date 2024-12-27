@@ -87,19 +87,19 @@ const SectionTitle = ({
               {char}
               <span
                 style={{
-                  top: "0.22em", // Varsayılan pozisyon
+                  top: "22%", // Varsayılan pozisyon
                   left: "78.92%",
                   transform: "translate(-50%, -50%)",
                   width: "0.42em",
                   height: "0.29em",
                 }}
                 className={cn("absolute", {
-                  "sm:top-[0.22em] md:width-[0.24em] md:height-[0.28em]": true, // Orta ekranlar
-                  "2sm:top-[0.24em] md:width-[0.24em] md:height-[0.30em] ": true, // Orta ekranlar
+                  " md:width-[0.24em] md:height-[0.28em]": true, // Orta ekranlar
+                  " md:width-[0.24em] md:height-[0.30em] ": true, // Orta ekranlar
 
-                  "md:top-[0.20em] md:width-[0.24em] md:height-[0.28em]": true, // Orta ekranlar
-                  "lg:top-[0.10em] lg:width-[0.25em] lg:height-[0.28em] ": true, // Büyük ekranlar
-                  "2xl:top-[0.10em] 2xl:width-[0.25em] 2xl:height-[0.29em]": true, // Çok büyük ekranlar
+                  "md:width-[0.24em] md:height-[0.28em]": true, // Orta ekranlar
+                  "lg:width-[0.25em] lg:height-[0.28em] ": true, // Büyük ekranlar
+                  " 2xl:width-[0.25em] 2xl:height-[0.29em]": true, // Çok büyük ekranlar
                 })}
               >
                 <Image

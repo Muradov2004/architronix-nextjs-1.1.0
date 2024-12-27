@@ -4,8 +4,8 @@ import { referansGalleryData } from '@/lib/fackData/referansGalleryData'
 import { cardSlideAnimation, cardSlideAnimationDelay, cardSlideAnimationRight, cardSlideAnimationRightDelay } from '@/lib/utils';
 
 export const metadata = {
-    title: "Architronix -- Product Archive",
-    description: "Architronix is a next js and tailwind css website",
+    title: "Azali -- Product Archive",
+    description: "Azali is a next js and tailwind css website",
 };
 
 const ProjectArchive = (id) => {

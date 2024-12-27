@@ -33,7 +33,7 @@ const LeafletMap = () => {
     return (
         <MapContainer center={mapDirection} zoom={13} scrollWheelZoom={true}  >
             <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">Architronix</a> contributors'
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">Azali</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <SetViewOnClick mapDirection={mapDirection}/>

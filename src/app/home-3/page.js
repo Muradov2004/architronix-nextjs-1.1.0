@@ -17,8 +17,8 @@ import { teamData } from '@/lib/fackData/teamData'
 import { cardSlideAnimation } from '@/lib/utils'
 
 export const metadata = {
-  title: "Architronix -- Home-3",
-  description: "Architronix is a next js and tailwind css website",
+  title: "Azali -- Home-3",
+  description: "Azali is a next js and tailwind css website",
 };
 const Home3 = () => {
   return (
@@ -34,7 +34,7 @@ const Home3 = () => {
         <div className='container-fluid '>
           <SectionTitle
             sectionName={"Team"}
-            sectionTitle={"Architects of Architronix"}
+            sectionTitle={"Architects of Azali"}
             sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"}
             button_text={"All Architects"}
             link={"/team"}

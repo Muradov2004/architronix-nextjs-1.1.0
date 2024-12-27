@@ -8,8 +8,8 @@ import Title from '@/components/ui/title'
 import { productData } from '@/lib/fackData/productData'
 
 export const metadata = {
-  title: "Architronix -- Product Single",
-  description: "Architronix is a next js and tailwind css website",
+  title: "Azali -- Product Single",
+  description: "Azali is a next js and tailwind css website",
 };
 
 const ProductSingle = () => {

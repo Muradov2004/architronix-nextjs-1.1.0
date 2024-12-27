@@ -72,13 +72,16 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
                 <div className="relative  flex flex-col   mr-[20%] md:mr-0 min-w-96 lg:flex-row h-full lg:h-[600px] border-b ">
                   {/* Sol taraf: Resim */}
                   <div className="w-full lg:w-1/2 h-full bg-cover bg-no-repeat relative flex justify-center items-center flex-col lg:-mt-8 p-4">
-                    <div className="md:ml-20  mr-[20%] md:mr-0">
+                  
+                    <div className="md:ml-20 mr-[20%] md:mr-0 relative">
                       <Image
                         src={logo}
                         alt="Steam"
-                        className="w-full h-auto max-w-[400px] lg:max-w-[500px]" // Responsive boyutlandırma
+                        className="w-full h-auto max-w-[400px] lg:max-w-[500px] animate-pulse cursor-pointer"
                       />
+                     
                     </div>
+
                     <div className="flex justify-center xl:justify-start items-center xl:items-end flex-col xl:flex-row gap-5 md:ml-20 mt-5">
                       <div className="flex items-end sm:gap-5 gap-2">
                         <div onClick={() => swiperRef.current?.slidePrev()}>
@@ -96,8 +99,7 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
                               `h-[50px] w-full lg:h-[75px] mr-[10%] md:mr-0 lg:w-full hover:border-primary sm:px-10 px-3 after:left-0 after:${bg_muted}`
                             )}
                           >
-                            Növbəti{" "}
-                            <RightArrow width={"25"} height={"18"} />
+                            Növbəti <RightArrow width={"25"} height={"18"} />
                           </ButtonFill>
                         </div>
                       </div>
@@ -116,6 +118,14 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
                           alt="Letter"
                           className="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px]  "
                         />
+                         <div className="absolute top-[6%] md:mr-2  mr-15 inset-0 flex items-center justify-center pointer-events-none">
+                        <span
+                          className="   text-white px-4 py-2 rounded-lg font-semibold animate-bounce"
+                          style={{ animationDuration: "1.5s" }}
+                        >
+                          Click Me!
+                        </span>
+                      </div>
                       </div>
                     )}
                     {showLetterOpenImage && (
@@ -139,7 +149,6 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
             )
           )}
         </Swiper>
-        
       </div>
     </section>
   );

@@ -36,7 +36,7 @@ const testimonialData = [
     name: "Sarah Johnson",
     position: "Modern Spaces Inc.",
     review:
-      "I was truly impressed by the design expertise of Architronix. They turned my home into a stylish haven, and I couldn't be happier!",
+      "I was truly impressed by the design expertise of Azali. They turned my home into a stylish haven, and I couldn't be happier!",
     img: img1,
   },
   {
@@ -44,7 +44,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img2,
   },
   {
@@ -52,7 +52,7 @@ const testimonialData = [
     name: "Emily Roberts",
     position: "UrbanLiving Interiors",
     review:
-      "Architronix Interiors transformed my office space into a functional yet aesthetically pleasing environment. Their attention to detail and innovative designs are top-notch",
+      "Azali Interiors transformed my office space into a functional yet aesthetically pleasing environment. Their attention to detail and innovative designs are top-notch",
     img: img3,
   },
   {
@@ -60,7 +60,7 @@ const testimonialData = [
     name: "Sarah Johnson",
     position: "Modern Spaces Inc.",
     review:
-      "I was truly impressed by the design expertise of Architronix. They turned my home into a stylish haven, and I couldn't be happier!",
+      "I was truly impressed by the design expertise of Azali. They turned my home into a stylish haven, and I couldn't be happier!",
     img: img4,
   },
   {
@@ -68,7 +68,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img5,
   },
   {
@@ -76,7 +76,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img6,
   },
   {
@@ -84,7 +84,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img7,
   },
   {
@@ -92,7 +92,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img8,
   },
   {
@@ -100,7 +100,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img9,
   },
   {
@@ -108,7 +108,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img10,
   },
   {
@@ -116,7 +116,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img11,
   },
   {
@@ -124,7 +124,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img12,
   },
   {
@@ -132,7 +132,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img13,
   },
   {
@@ -140,7 +140,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img14,
   },
   {
@@ -148,7 +148,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img15,
   },
   {
@@ -156,7 +156,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img16,
   },
   {
@@ -164,7 +164,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img17,
   },
   {
@@ -172,7 +172,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img18,
   },
   {
@@ -180,7 +180,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img19,
   },
   {
@@ -188,7 +188,7 @@ const testimonialData = [
     name: "John Smith",
     position: "Smith & Co. Architecture.",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Azali exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
     img: img20,
   },
 ];
