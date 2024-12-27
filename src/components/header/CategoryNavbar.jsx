@@ -74,47 +74,55 @@ const CategoryNavbar = ({
           >
             {menuListTwo.map(({ id, name, isDropdown, isMegaMenu }) => (
               <SwiperSlide key={id}>
-         <li key={id} className="group relative">
-                  <button
-                    className={`text-lg font-medium w-40 h-12 ${
-                      selectedCategory === name
-                        ? "bg-primary text-white"
-                        : "bg-secondary text-black"
-                    } shadow-md hover:bg-primary hover:text-white transition-colors duration-300 flex items-center justify-center`}
-                    onClick={() => handleCategorySelect(name)}
-                    onMouseEnter={() => setDropDown(true)} // Fare üzerine geldiğinde çalışır
-                    onMouseLeave={() => setDropDown(false)} 
-                  >
-                    {name}
-                    {(isDropdown || isMegaMenu) && (
-                      <span className="ml-2 transition-transform duration-300 transform group-hover:rotate-180">
-                        <svg
-                          width="12"
-                          height="9"
-                          viewBox="0 0 12 9"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M11 8L6 2L1 8" />
-                        </svg>
-                      </span>
-                    )}
-                  </button>
-               
-                  {isDropdown && (
-                    <DropDownMenu
-                      dropDownList={isDropdown}
-                      parentId={id}
-                      bgColor={"bg-primary"}
-                      setSelectedSubCategory={setSelectedSubCategory}
-                      setSelectedCategory={setSelectedCategory}
-                      setTitle={setTitle}
-                    />
-                  )}
-                  {isMegaMenu && (
-                    <MegaMenuTwo dropDownList={isMegaMenu} parentId={id} />
-                  )}
-                </li>
+                <li key={id} className="group relative">
+  <button
+    className={`text-lg font-medium w-40 h-12 ${
+      selectedCategory === name
+        ? "bg-primary text-white"
+        : "bg-secondary text-black"
+    } shadow-md hover:bg-primary hover:text-white transition-colors duration-300 flex items-center justify-center`}
+    onClick={() => handleCategorySelect(name, isDropdown || isMegaMenu, id)}
+    onMouseEnter={() => setDropDown(true)}
+  >
+    {name}
+    {(isDropdown || isMegaMenu) && (
+      <span className="ml-2 transition-transform duration-300 transform group-hover:rotate-180">
+        <svg
+          width="12"
+          height="9"
+          viewBox="0 0 12 9"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M11 8L6 2L1 8" />
+        </svg>
+      </span>
+    )}
+  </button>
+  {/* Dropdown or MegaMenu should also respond to hover */}
+  {(isDropdown || isMegaMenu) && dropdown && (
+    <div
+      className="absolute z-10 w-64 bg-white shadow-lg rounded-md"
+      onMouseEnter={() => setDropDown(true)}
+      onMouseLeave={() => setDropDown(false)}
+    >
+      {isDropdown && (
+        <DropDownMenu
+          dropDownList={isDropdown}
+          parentId={id}
+          bgColor={"bg-primary"}
+          setSelectedSubCategory={setSelectedSubCategory}
+          setSelectedCategory={setSelectedCategory}
+          setTitle={setTitle}
+        />
+      )}
+      {isMegaMenu && (
+        <MegaMenuTwo dropDownList={isMegaMenu} parentId={id} />
+      )}
+    </div>
+  )}
+</li>
+
               </SwiperSlide>
             ))}
             <div className="container">

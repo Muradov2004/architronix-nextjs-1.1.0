@@ -62,21 +62,8 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
                         projectsData.map(({ id, area, client, project_img, project_type, project_year }) => {
                             return (
                                 <SwiperSlide key={id}>
-                                    <div className='bg-cover bg-no-repeat pb-[70px] lg:pt-[758px] pt-[500px] max-w-[1550px] after:contents-[""] after:absolute after:top-0 after:right-0 after:w-full after:h-full after:bg-bottom-liner after:z-[1] after:max-w-[1550px] ml-auto' style={{ backgroundImage: `url(${project_img.src})` }}>
+                                    <div className='bg-cover bg-no-repeat pb-[70px] lg:pt-[500px] pt-[400px] max-w-[1550px] after:contents-[""] after:absolute after:top-0 after:right-0 after:w-full after:h-full after:bg-bottom-liner after:z-[1] after:max-w-[1550px] ml-auto' style={{ backgroundImage: `url(${project_img.src})` }}>
                                         <div className='flex xl:justify-end justify-center -mt-36 xl:-mt-0 5xl:gap-20 3xl:gap-14 sm:gap-10 gap-4 max-w-[1166px] relative z-10 ml-auto pr-7.5'>
-                                            {/* <h6 className='flex flex-col text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap'>Clients:
-                                                <span className='text-lg font-normal'>{client}</span>
-                                            </h6>
-
-                                            <h6 className='sm:flex hidden flex-col text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap'>Area:
-                                                <span className='text-lg font-normal'>{area}</span>
-                                            </h6>
-                                            <h6 className='sm:flex hidden flex-col text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap '>Project year:
-                                                <span className='text-lg font-normal'>{project_year}</span>
-                                            </h6>
-                                            <h6 className='flex flex-col text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap'>Project type:
-                                                <span className='text-lg font-normal'>{project_type}</span>
-                                            </h6> */}
                                             <Link href={"/products"} className='4xl:block hidden'>
                                                 <ButtonOutline className="border-secondary text-secondary-foreground sm:px-10 px-3 whitespace-nowrap hover:border-primary">Ətraflı</ButtonOutline>
                                             </Link>
@@ -88,7 +75,7 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
                     }
                 </Swiper>
                 <div className='flex justify-center xl:justify-start items-center xl:items-end flex-col xl:flex-row gap-5 '>
-                    <div className={cn(`project-pagination 3xl:max-w-[673px] max-w-[500px] w-full bg-primary xl:px-10 px-7 xl:pt-25 xl:pb-[150px] py-16 relative z-[1] xl:mt-[-271px] mt-[-100px] ${bg_muted}`)}> </div>
+                    <div className={cn(`project-pagination 3xl:max-w-[673px] max-w-[500px] w-full bg-primary xl:px-10 px-7 xl:pt-[40px] xl:pb-[90px] relative z-[1] xl:mt-[-271px]  ${bg_muted}`)}> </div>
                     <div className='flex items-end sm:gap-5 gap-2'>
                         <div onClick={() => swiperRef.current?.slidePrev()}>
                             <ButtonFill className={"rotate-180 h-[75px] w-[75px] sm:px-3 px-3 after:bg-secondary border-secondary hover:border-primary hover:bg-primary hover:text-secondary text-primary-foreground "}><RightArrow width={"35"} height={"22"} /></ButtonFill>
