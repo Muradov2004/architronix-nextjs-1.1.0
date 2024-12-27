@@ -27,7 +27,7 @@ const ProductGrid = ({ projects, bg_muted }) => {
             </div>
 
             {/* Button ve blur alan */}
-            <div className="absolute inset-0 flex flex-col justify-end z-10 transition-opacity duration-500 group-hover:opacity-0">
+            <div className="absolute inset-0 flex ml-0 flex-col justify-end z-10 transition-opacity duration-500 group-hover:opacity-0">
               <Link
                 href="https://wa.link/7sfqml"
                 className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-10"
@@ -37,7 +37,9 @@ const ProductGrid = ({ projects, bg_muted }) => {
                     `after:z-[1] h-12 md:h-14 after:left-0 after:${bg_muted}`
                   )}
                 >
-                  <span className="relative z-10">Ravy Tower</span>
+                  <span className="relative z-10">Müraciət
+
+                  </span>
                 </ButtonFill>
               </Link>
 
