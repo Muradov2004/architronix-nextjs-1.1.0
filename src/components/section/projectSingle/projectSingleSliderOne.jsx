@@ -24,7 +24,11 @@ console.log(project)
         {
             id: 3,
             img: project.project_img6
-        }
+        },
+        {
+            id: 4,
+            img: project.project_img4
+        },
     
     ]
 

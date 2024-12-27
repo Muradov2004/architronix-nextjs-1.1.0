@@ -31,7 +31,7 @@ const VideoPlay2 = ({ img,video="lfDZJqSrIuk" }) => {
 
 <div
   onClick={() => setOpen(true)}
-  className='w-24 md:w-25 md:h-[109px] lg:w-28 h-24 rounded-full text-primary-foreground absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#D9D9D9]/[.78] cursor-pointer flex justify-center items-center md:mt-[86px] lg:mt-[96px]'
+  className='w-24 md:w-25 md:h-[109px] lg:w-28 h-24 rounded-full text-primary-foreground absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#D9D9D9]/[.78] cursor-pointer flex justify-center items-center md:mt-[86px] lg:mt-[96px] 5xl:mt-52'
 >
   <span>
     <PlayIcon width={"30"} height={"36"} />
