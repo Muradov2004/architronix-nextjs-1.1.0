@@ -97,7 +97,6 @@ const ProjectSingle = ({ params }) => {
 export default ProjectSingle
 
 export async function generateStaticParams() {
-    // Replace this array with your actual data source
     const ids = ['1', '2', '3','4','5','6','7','8','9','10','11','12','13','14']; // Example IDs
   
     return ids.map((id) => ({
