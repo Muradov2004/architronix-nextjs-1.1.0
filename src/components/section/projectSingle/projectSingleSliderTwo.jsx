@@ -14,49 +14,55 @@ import project_img_6 from "@/assets/images/borani/project-borani-9.jpg"
 import RightArrow from '@/assets/icons/rightArrow';
 import ButtonFill from '@/components/ui/buttons/buttonFill';
 import { staticBluarDataUrl } from '@/lib/staticBluarDataUrl';
+import { referansGalleryData } from '@/lib/fackData/referansGalleryData';
 
+
+
+const ProjectSingleSliderTwo = ({id}) => {
+    const swiperRef = useRef()
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+    const product = referansGalleryData.find((item) => item.id === parseInt(id))
+
+
+    
 const projectImg = [
     {
         id: 1,
-        img: project_img_1
+        img: product.project_img1
     },
     {
         id: 2,
-        img: project_img_2
+        img: product.project_img2
     },
     {
         id: 3,
-        img: project_img_3
+        img: product.project_img3
     },
     {
         id: 4,
-        img: project_img_4
+        img: product.project_img4
     },
     {
         id: 5,
-        img: project_img_5
+        img: product.project_img5
     },
     {
         id: 6,
-        img: project_img_6
+        img: product.project_img6
     },
     {
         id: 7,
-        img: project_img_1
+        img: product.project_img7
     },
     {
         id: 8,
-        img: project_img_2
+        img: product.project_img8
     },
     {
         id: 9,
-        img: project_img_3
-    },
-
-]
-const ProjectSingleSliderTwo = () => {
-    const swiperRef = useRef()
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+        img: product.project_img9
+    },]
 
     return (
         <div className='container'>

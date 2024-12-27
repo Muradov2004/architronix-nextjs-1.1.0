@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 import bg_banner from "@/assets/images/borani/project-borani-1.jpg"
 import project_img_1 from "@/assets/images/borani/project-borani-2.jpg"
@@ -13,13 +14,16 @@ import ButtonOutline from '@/components/ui/buttons/buttonOutline'
 import Title from '@/components/ui/title'
 import VideoPlay from '@/components/ui/videoPlay'
 import VideoPlay2 from '@/components/ui/videoPlay2'
+import { referansGalleryData } from '@/lib/fackData/referansGalleryData'
 
-export const metadata = {
-    title: "Architronix -- Project Single",
-    description: "Architronix is a next js and tailwind css website",
-};
+// export const metadata = {
+//     title: "Architronix -- Project Single",
+//     description: "Architronix is a next js and tailwind css website",
+// };
 
-const ProjectSingle = () => {
+const ProjectSingle = ({ params }) => {
+    const { id } = params;
+    const project = referansGalleryData.find((item) => item.id === parseInt(id));
     return (
         <>
             <section className='blog-single'>
@@ -28,7 +32,7 @@ const ProjectSingle = () => {
                     
                     <div className='w-full  '>
 
-                    <VideoPlay2 img={bg_banner}   />
+                    <VideoPlay2 img={project.project_img1}   />
                     </div>
                     <div className='container mt-[500px]  '>
                         <div className='grid lg:grid-cols-[65%_auto] gap-[38px]'>
@@ -73,14 +77,14 @@ const ProjectSingle = () => {
                     </div>
                     <div className='container-fluid mt-30'>
                         <div className='flex lg:flex-row flex-col gap-8'>
-                            <Image src={project_img_1} loading='lazy'  placeholder='blur'    width={"auto"} height={"auto"} alt='img' className='w-full h-full' />
-                            <Image src={project_img_2} loading='lazy'  placeholder='blur'    width={"auto"} height={"auto"} alt='img' className='w-full h-full' />
+                            <Image src={project.project_img2} loading='lazy'  placeholder='blur'    width={"auto"} height={"auto"} alt='img' className='w-full h-full' />
+                            <Image src={project.project_img3} loading='lazy'  placeholder='blur'    width={"auto"} height={"auto"} alt='img' className='w-full h-full' />
                         </div>
                     </div>
                     <Paragraph />
-                    <ProjectSingleSliderOne />
+                    <ProjectSingleSliderOne id={id}/>
                     <Paragraph />
-                    <ProjectSingleSliderTwo />
+                    <ProjectSingleSliderTwo id={id}/>
                     <Paragraph />
                 </div>
 
@@ -91,3 +95,12 @@ const ProjectSingle = () => {
 }
 
 export default ProjectSingle
+
+export async function generateStaticParams() {
+    // Replace this array with your actual data source
+    const ids = ['1', '2', '3','4','5','6','7','8','9','10','11','12','13','14']; // Example IDs
+  
+    return ids.map((id) => ({
+      id, // Dynamic segment
+    }));
+  }

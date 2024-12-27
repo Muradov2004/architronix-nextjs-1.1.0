@@ -3,45 +3,43 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from "swiper/modules"
 import 'swiper/css';
-
-import project_img_3 from "@/assets/images/borani/project-borani-4.jpg"
-import project_img_4 from "@/assets/images/borani/project-borani-5.jpg"
-import project_img_5 from "@/assets/images/borani/project-borani-6.jpg"
-// import project_img_4 from "@/assets/images/project-image-4.jpg"
-// import project_img_5 from "@/assets/images/project-image-5.jpg"
-
 import ProgressAndNatigation from '../../ui/progressAndNatigation'
 import Image from 'next/image';
 import { staticBluarDataUrl } from '@/lib/staticBluarDataUrl';
+import { referansGalleryData } from '@/lib/fackData/referansGalleryData';
 
-const projectImgList = [
-    {
-        id: 1,
-        img: project_img_3
-    },
-    {
-        id: 2,
-        img: project_img_4
-    },
-    {
-        id: 3,
-        img: project_img_5
-    },
-    {
-        id: 4,
-        img: project_img_3
-    },
-    {
-        id: 5,
-        img: project_img_4
-    },
-    {
-        id: 6,
-        img: project_img_5
-    },
+const ProjectSingleS = ({id}) => {
 
-]
-const ProjectSingleS = () => {
+       const project = referansGalleryData.find((item) => item.id === parseInt(id));
+console.log(project)
+    const projectImgList = [
+        {
+            id: 1,
+            img: project.project_img4
+        },
+        {
+            id: 2,
+            img: project.project_img5
+        },
+        {
+            id: 3,
+            img: project.project_img6
+        },
+        {
+            id: 4,
+            img: project.project_img7
+        },
+        {
+            id: 5,
+            img: project.project_img8
+        },
+        {
+            id: 6,
+            img: project.project_img9
+        },
+    
+    ]
+
     const pagination = {
         clickable: true,
         el: ".progressbar-pagination",

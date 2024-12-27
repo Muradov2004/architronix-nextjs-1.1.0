@@ -8,7 +8,9 @@ export const metadata = {
     description: "Architronix is a next js and tailwind css website",
 };
 
-const ProjectArchive = () => {
+const ProjectArchive = (id) => {
+
+    
     return (
         <section>
             <div className='container-fluid '>
