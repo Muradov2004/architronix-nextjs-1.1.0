@@ -16,7 +16,7 @@ const CategoryNavbar = ({
   const handleCategorySelect = (categoryName) => {
     setTitle(categoryName);
     setSelectedCategory(categoryName);
-    setSelectedSubCategory(null); // Seçilen kategoriyi kaydet
+    setSelectedSubCategory(null); 
   };
 
   return (
@@ -79,11 +79,11 @@ const CategoryNavbar = ({
       </div>
 
       <div className="xl:hidden block w-full overflow-x-auto custom-scrollbar">
-  <div className="flex items-center gap-4 px-4 h-16"> {/* Yükseklik artırıldı */}
+  <div className="flex items-center gap-4 px-4 h-16"> 
     {menuListTwo.map(({ id, name }) => (
       <button
         key={id}
-        className={`text-base font-medium min-w-[120px] h-12 px-3 ${ // Buton yüksekliği artırıldı
+        className={`text-base font-medium min-w-[120px] h-12 px-3 ${ 
           selectedCategory === name
             ? "bg-primary text-white"
             : "bg-secondary text-black"
