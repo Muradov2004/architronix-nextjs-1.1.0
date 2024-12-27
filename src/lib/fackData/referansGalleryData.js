@@ -65,5 +65,93 @@ export const referansGalleryData = [
         project_type: "Private House",
         link: "/project-single",
         location:"US"
-    }
+    }, {
+        id: 5,
+        project_name: "Zabrat Mall",
+        project_img: project_img_5,
+        project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
+        client: "Sogeprom",
+        area: "14,891 m²",
+        project_year: "2022",
+        project_type: "Private House",
+        link: "/project-single",
+        location:"US"
+    }, {
+        id: 5,
+        project_name: "Zabrat Mall",
+        project_img: project_img_5,
+        project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
+        client: "Sogeprom",
+        area: "14,891 m²",
+        project_year: "2022",
+        project_type: "Private House",
+        link: "/project-single",
+        location:"US"
+    }, {
+        id: 5,
+        project_name: "Zabrat Mall",
+        project_img: project_img_5,
+        project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
+        client: "Sogeprom",
+        area: "14,891 m²",
+        project_year: "2022",
+        project_type: "Private House",
+        link: "/project-single",
+        location:"US"
+    }, {
+        id: 5,
+        project_name: "Zabrat Mall",
+        project_img: project_img_5,
+        project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
+        client: "Sogeprom",
+        area: "14,891 m²",
+        project_year: "2022",
+        project_type: "Private House",
+        link: "/project-single",
+        location:"US"
+    }, {
+        id: 5,
+        project_name: "Zabrat Mall",
+        project_img: project_img_5,
+        project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
+        client: "Sogeprom",
+        area: "14,891 m²",
+        project_year: "2022",
+        project_type: "Private House",
+        link: "/project-single",
+        location:"US"
+    }, {
+        id: 5,
+        project_name: "Zabrat Mall",
+        project_img: project_img_5,
+        project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
+        client: "Sogeprom",
+        area: "14,891 m²",
+        project_year: "2022",
+        project_type: "Private House",
+        link: "/project-single",
+        location:"US"
+    }, {
+        id: 5,
+        project_name: "Zabrat Mall",
+        project_img: project_img_5,
+        project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
+        client: "Sogeprom",
+        area: "14,891 m²",
+        project_year: "2022",
+        project_type: "Private House",
+        link: "/project-single",
+        location:"US"
+    }, {
+        id: 5,
+        project_name: "Zabrat Mall",
+        project_img: project_img_5,
+        project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
+        client: "Sogeprom",
+        area: "14,891 m²",
+        project_year: "2022",
+        project_type: "Private House",
+        link: "/project-single",
+        location:"US"
+    },
 ]
