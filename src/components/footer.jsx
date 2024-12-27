@@ -53,7 +53,7 @@ const Footer = () => {
                 <h5 className="text-2xl font-extrabold inline-block text-primary-foreground leading-160">
                   Ünvan
                 </h5>
-                
+
                 <span className="w-[99px] h-[1px] bg-primary block my-2.5"></span>
                 <div className="mt-[18px]">
                   <p className="text-xl font-bold text-primary-foreground">
@@ -85,20 +85,12 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="-mt-20 ml-28">
-            <h5 className="text-2xl flex flex-row font-extrabold text-primary-foreground mb-4">
-             
-            </h5>
-            <div className="w-full h-full relative">
-              {" "}
-              {/* Daha küçük bir boyut */}
+            <div className="h-[300px] mt-5 md:h-full  md:mt-0">
               <LeafletMap />
             </div>
           </div>
-          </div>
 
           {/* Harita Bölümü */}
-        
 
           <hr className="bg-primary text-primary-foreground" />
           <div className="py-8 lg:flex justify-between items-center">
@@ -115,4 +107,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer;

@@ -31,7 +31,7 @@ function SetViewOnClick({ mapDirection }) {
 const LeafletMap = () => {
     const { mapDirection } = useContext(MapContext)
     return (
-        <MapContainer center={mapDirection} zoom={13} scrollWheelZoom={true}  style={{ height: "392px" }}>
+        <MapContainer center={mapDirection} zoom={13} scrollWheelZoom={true}  >
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">Architronix</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
