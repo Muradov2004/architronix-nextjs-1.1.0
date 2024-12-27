@@ -1,23 +1,36 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
+import insta from "@/assets/icons/instagram.png";
+import fb from "@/assets/icons/facebook.png";
+import tw from "@/assets/icons/twitter.png";
+import ln from "@/assets/icons/linkedin.png";
+import Image from "next/image";
 
 const SocialMediaList = () => {
-    return (
-        <ul className='flex items-center gap-7.5'>
-            <li>
-                <Link href="" className='font-semibold text-lg relative after:contents-[""] after:absolute after:h-[20px] after:w-[1px] after:bg-black after:rotate-[22deg] after:top-1/2 after:-translate-y-1/2 after:right-[-15px] hover-underline'><span>FB</span></Link>
-            </li>
-            <li>
-                <Link href="" className='font-semibold text-lg relative after:contents-[""] after:absolute after:h-[20px] after:w-[1px] after:bg-black after:rotate-[22deg] after:top-1/2 after:-translate-y-1/2 after:right-[-15px] hover-underline'><span>IN</span></Link>
-            </li>
-            <li>
-                <Link href="" className='font-semibold text-lg relative after:contents-[""] after:absolute after:h-[20px] after:w-[1px] after:bg-black after:rotate-[22deg] after:top-1/2 after:-translate-y-1/2 after:right-[-15px] hover-underline'><span>TW</span></Link>
-            </li>
-            <li>
-                <Link href="" className='font-semibold text-lg hover-underline'><span>LI</span></Link>
-            </li>
-        </ul>
-    )
-}
+  return (
+    <ul className="flex items-center gap-5">
+      <li>
+        <Link href="">
+          <Image src={fb} alt="fb" height="25" width="25" />
+        </Link>
+      </li>
+      <li>
+        <Link href="">
+          <Image src={insta} alt="insta" height="25" width="25" />
+        </Link>
+      </li>
+      <li>
+        <Link href="">
+          <Image src={tw} alt="tw" height="25" width="25" />
+        </Link>
+      </li>
+      <li>
+        <Link href="">
+          <Image src={ln} alt="ln" height="25" width="25" />
+        </Link>
+      </li>
+    </ul>
+  );
+};
 
-export default SocialMediaList
+export default SocialMediaList;

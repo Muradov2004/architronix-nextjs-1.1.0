@@ -33,15 +33,15 @@ const Footer = () => {
                   Keçidlər:
                 </h5>
                 <span className="w-[99px] h-[1px] bg-primary block my-2.5"></span>
-                <div>
-                  <p className="text-lg text-primary-foreground">Haqqımızda </p>
-                  <p className="text-lg text-primary-foreground">
-                    Məhsullarımız{" "}
-                  </p>
-                  <p className="text-lg text-primary-foreground">Referans</p>
-                  <p className="text-lg text-primary-foreground">Kataloq </p>
-                  <p className="text-lg text-primary-foreground">Karyera </p>
-                  <p className="text-lg text-primary-foreground">Əlaqə </p>
+                <div className="flex flex-col">
+                  <Link href="/about-us" className="text-lg text-primary-foreground w-full">Haqqımızda </Link>
+                  <Link href="/products" className="text-lg text-primary-foreground w-full">
+                    Məhsullarımız
+                  </Link>
+                  <Link href="/referance" className="text-lg text-primary-foreground w-full">Referans</Link>
+                  <Link href="/pdf/Azali-catalog.pdf" className="text-lg text-primary-foreground w-full">Kataloq </Link>
+                  <Link href="/career" className="text-lg text-primary-foreground w-full">Karyera </Link>
+                  <Link href="/contact" className="text-lg text-primary-foreground w-full">Əlaqə </Link>
                 </div>
               </div>
             </div>
@@ -107,4 +107,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer;
