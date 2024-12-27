@@ -7,50 +7,45 @@ export const servicesData = [
     },
     {
         id: "02",
-        service_name: "Commercial Design",
-        service_desc: "Our expertise in commercial design focuses on optimizing functionality and aesthetics",
+        service_name: "İnkişaf",
+        service_desc: "Karyera yüksəlişi və peşəkar inkişaf imkanı",
         link: "/service-single"
     },
     {
         id: "03",
-        service_name: "Space Planning",
-        service_desc: "We maximize the potential of your space, ensuring it's organized, and aesthetically pleasing.",
-
+        service_name: "Yaradıcılıq",
+        service_desc: "Unikal ideya və layihələri həyata keçirmək azadlığı.",
         link: "/service-single"
     },
     {
         id: "04",
-        service_name: "Color Consultation",
-        service_desc: "Colors play a significant role in design. We help you choose the perfect palette for your space.",
-
+        service_name: "Keyfiyyət",
+        service_desc: "Premium materiallarla işləmək.",
         link: "/service-single"
     },
     {
         id: "05",
-        service_name: "Revamps & Remodels",
-        service_desc: "We provide renovation and remodeling services that breathe new life into existing structures.",
+        service_name: "Komanda ruhu",
+        service_desc: "Dostluq və dəstək atmosferi.",
 
         link: "/service-single"
     },
     {
         id: "06",
-        service_name: "Custom Furnishings",
-        service_desc: "Elevate your space with unique, furnishings that are designed to suit your style and needs.",
-
+        service_name: "İnnovasiya",
+        service_desc: "Ən müasir dizayn həllərinin yaradılmasında iştirak.",
         link: "/service-single"
     },
     {
         id: "07",
-        service_name: "Project Management",
-        service_desc: "From initial concepts to final installation, we oversee every detail for a successful project.",
-
+        service_name: "Rəqabətli Ödəniş",
+        service_desc: "Səylərinizi səxavətlə mükafatlandırın.",
         link: "/service-single"
     },
     {
         id: "08",
-        service_name: "Concept Development",
-        service_desc: "We work closely with you to develop a design concept that resonates with your vision.",
-
+        service_name: "Unikal layihələr",
+        service_desc: "İlham verən mebellərin yaradılmasında iştirak.",
         link: "/service-single"
     },
 

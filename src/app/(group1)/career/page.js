@@ -34,8 +34,8 @@ const Career = () => {
       <div className="container mt-30">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
           {/* Sol taraf: Resim */}
-          <div className="w-full lg:w-1/2 bg-cover bg-no-repeat relative">
-            <Image src={CareerImage} alt="Career" className="rounded-lg" />
+          <div className="w-full lg:w-1/2">
+            <Image src={CareerImage} alt="Career" className="h-[600px] object-cover rounded-lg" />
           </div>
 
           {/* Sağ taraf: Form */}
@@ -45,41 +45,41 @@ const Career = () => {
                 <div className="grid w-full gap-5">
                   <form className="w-full space-y-4">
                     <InputFiled
-                      placeholderc={"Adi ve Soyadi"}
+                      placeholderc={"Adı ve Soyadı"}
                       type={"text"}
                       className={"w-full"}
                     />
                     <div className="flex flex-col sm:flex-row gap-4">
                       <InputFiled
-                        placeholderc={"Phone Number"}
+                        placeholderc={"Telefon"}
                         type={"number"}
                         className={"w-full"}
                       />
                       <InputFiled
-                        placeholderc={"Your Email"}
+                        placeholderc={"E-poçt"}
                         type={"email"}
                         className={"w-full"}
                       />
                     </div>
                     <div className="flex flex-col sm:flex-row gap-4">
                       <InputFiled
-                        placeholderc={"Tevellud"}
+                        placeholderc={"Təvəllüd"}
                         type={"date"}
                         className={"w-full"}
                       />
                       <InputFiled
-                        placeholderc={"Iddia etdiyini emek haqqi"}
+                        placeholderc={"İddia etdiyiniz əmək haqqı"}
                         type={"number"}
                         className={"w-full"}
                       />
                     </div>
                     <InputFiled
-                      placeholderc={"Istediyiniz Is"}
+                      placeholderc={"İstədiyiniz iş"}
                       type={"text"}
                       className={"w-full"}
                     />
                     <div>
-                      <label className="block mb-2">Attach a Document</label>
+                      <label className="block mb-2">Faylları yükləyin</label>
                       <input
                         type="file"
                         name="file"
@@ -88,12 +88,12 @@ const Career = () => {
                       />
                     </div>
                     <TextAreaFiled
-                      placeholder={"Type your message"}
+                      placeholder={"Mesajınızı yazın"}
                       className={"w-full min-h-[120px]"}
                     />
                     <div className="flex justify-end">
                       <ButtonOutline>
-                        Send message <RightArrow height={"22"} width={"35"} />
+                        Göndər <RightArrow height={"22"} width={"35"} />
                       </ButtonOutline>
                     </div>
                   </form>

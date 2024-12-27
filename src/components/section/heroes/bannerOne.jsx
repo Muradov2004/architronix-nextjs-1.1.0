@@ -76,14 +76,14 @@ const BannerOne = ({ data, text_muted, bg_muted }) => {
       
       {/* Overlay Yazılar */}
       <div className="absolute inset-0 flex flex-col ml-2 xl:ml-20 justify-center z-30 pointer-events-none xl:pt-[200px] pt-[160px] pb-[150px] ">
-        <h1 className='text-white [font-size:_clamp(60px,10vw,150px)] font-extrabold leading-[90%] '>
+        <h1 className='text-white [font-size:_clamp(60px,10vw,110px)] font-extrabold leading-[90%] '>
           {data[currentSlide].heading_one && <TextTyped text={[data[currentSlide].heading_one]} />}
           <br />
-          Hər bir detalda
+          hər bir detalda
           <br />
           {data[currentSlide].heading_two && <TextTyped text={[data[currentSlide].heading_two]} />}
         </h1>
-        <Link href="https://wa.link/7sfqml" className="mt-10 inline-block">
+        <Link href="https://wa.link/7sfqml" className="mt-20 inline-block z-50">
           <ButtonFill className={cn(`after:z-[1] sm:px-10 px-4 after:left-0 after:${bg_muted} `)}>
             <span className="relative z-10">Müraciət</span>
           </ButtonFill>

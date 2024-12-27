@@ -1,13 +1,12 @@
 "use client";
-import Image from "next/image";
-import { motion } from "framer-motion";
 import about_img from "@/assets/images/newImages/about-home.webp";
-import Qoz from "@/assets/images/Qoz.png";
 import SectionTitle from "../../ui/sectionTitle";
-import { cardSlideAnimation, cn } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { useInView } from "react-intersection-observer";
 import SectionSidebarImg from "@/components/ui/sectionSidebarImg";
-
+import ButtonOutline from "@/components/ui/buttons/buttonOutline";
+import Link from "next/link";
+import RightArrow from "@/assets/icons/rightArrow";
 
 const aboutList = [
   {
@@ -35,16 +34,9 @@ const AboutOne = ({ text_muted, bg_muted }) => {
     triggerOnce: true,
   });
   return (
-    
     <section className="pt-20  ">
       <div className="container-fluid ">
         <div className="relative mb-16">
-          {/* <Image
-            src={Qoz}
-            alt="Qoz"
-            className="absolute left-[31.5%] z-30 top-1/2 transform -translate-y-1/2 w-10 h-11"
-            // w-16 ve h-16 değerlerini resmin boyutuna göre ayarlayın
-          /> */}
           {/* Section Title */}
           <SectionTitle
             sectionName={"AZALI"}
@@ -100,6 +92,16 @@ const AboutOne = ({ text_muted, bg_muted }) => {
                     </li>
                   );
                 })}
+                <Link href="/about-us" className="inline-block">
+                  <ButtonOutline
+                    className={
+                      "border-secondary text-secondary-foreground sm:px-10 px-3 after:hover:bg-secondary after:left-0 hover:text-primary-foreground"
+                    }
+                  >
+                    Ətraflı
+                    <RightArrow width={"35"} height={"22"} />
+                  </ButtonOutline>
+                </Link>
               </ul>
             </div>
           </div>

@@ -4,13 +4,6 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Thumbs, FreeMode } from "swiper/modules"
 import 'swiper/css';
-
-import project_img_1 from "@/assets/images/borani/project-borani-7.jpg"
-import project_img_2 from "@/assets/images/borani/project-borani-8.jpg"
-import project_img_3 from "@/assets/images/borani/project-borani-9.jpg"
-import project_img_4 from "@/assets/images/borani/project-borani-7.jpg"
-import project_img_5 from "@/assets/images/borani/project-borani-8.jpg"
-import project_img_6 from "@/assets/images/borani/project-borani-9.jpg"
 import RightArrow from '@/assets/icons/rightArrow';
 import ButtonFill from '@/components/ui/buttons/buttonFill';
 import { staticBluarDataUrl } from '@/lib/staticBluarDataUrl';
@@ -29,38 +22,14 @@ const ProjectSingleSliderTwo = ({id}) => {
 const projectImg = [
     {
         id: 1,
-        img: product.project_img1
-    },
-    {
-        id: 2,
-        img: product.project_img2
-    },
-    {
-        id: 3,
-        img: product.project_img3
-    },
-    {
-        id: 4,
-        img: product.project_img4
-    },
-    {
-        id: 5,
-        img: product.project_img5
-    },
-    {
-        id: 6,
-        img: product.project_img6
-    },
-    {
-        id: 7,
         img: product.project_img7
     },
     {
-        id: 8,
+        id: 2,
         img: product.project_img8
     },
     {
-        id: 9,
+        id: 3,
         img: product.project_img9
     },]
 
@@ -124,7 +93,7 @@ const projectImg = [
                     projectImg?.map(({ id, img }) => {
                         return (
                             <SwiperSlide key={id}>
-                                <Image src={img} loading='lazy'  placeholder='blur' blurDataURL={staticBluarDataUrl} alt='img' className='w-full lg:min-h-[250px] min-h-[100px] max-h-[100px] h-full ' />
+                                <Image src={img} loading='lazy'  placeholder='blur' blurDataURL={staticBluarDataUrl} alt='img' className='w-full lg:min-h-[250px] min-h-[100px] max-h-[100px] h-full object-contain' />
                             </SwiperSlide>
                         )
                     })

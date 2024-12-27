@@ -192,7 +192,7 @@ const testimonialData = [
     img: img20,
   },
 ];
-const Testimonial = ({ text_muted, bg_muted,check }) => {
+const Testimonial = ({ text_muted, bg_muted, check, show = true }) => {
   const pagination = {
     clickable: true,
     el: ".progressbar-pagination",
@@ -201,17 +201,27 @@ const Testimonial = ({ text_muted, bg_muted,check }) => {
   return (
     <section className="pt-20">
       <div className="container-fluid ">
-        
-        {check && <SectionTitle
-          sectionName={"AZALI"}
-          sectionTitle={"Bizim tərəfdaşlarımız"}
-          sectionDesc={"Tərəfdaşlarımız bizim üçün uğurumuzun təməlidir."}
-          bg_muted={bg_muted}
-          text_muted={text_muted}
-          button_text={"Daha Ətraflı"}
-          link={"/referance"}
-        />
-        }
+        {check && show && (
+          <SectionTitle
+            sectionName={"AZALI"}
+            sectionTitle={"Bizim tərəfdaşlarımız"}
+            sectionDesc={"Tərəfdaşlarımız bizim üçün uğurumuzun təməlidir."}
+            bg_muted={bg_muted}
+            text_muted={text_muted}
+            button_text={"Daha Ətraflı"}
+            link={"/referance"}
+          />
+        )}
+        {check && !show && (
+          <SectionTitle
+            sectionName={"AZALI"}
+            sectionTitle={"Bizim tərəfdaşlarımız"}
+            sectionDesc={"Tərəfdaşlarımız bizim üçün uğurumuzun təməlidir."}
+            bg_muted={bg_muted}
+            text_muted={text_muted}
+            link={"/referance"}
+          />
+        )}
         <div className="lg:pt-30 2sm:pt-20 pt-14">
           <Swiper
             spaceBetween={30}
@@ -223,7 +233,7 @@ const Testimonial = ({ text_muted, bg_muted,check }) => {
                 slidesPerView: 2,
               },
               1300: {
-                slidesPerView: 3,
+                slidesPerView: 4,
               },
             }}
             pagination={pagination}
@@ -231,34 +241,30 @@ const Testimonial = ({ text_muted, bg_muted,check }) => {
             modules={[Pagination, Navigation]}
             className=""
           >
-            {testimonialData.map(({ id, name, position, img,review }) => {
+            {testimonialData.map(({ id, name, position, img, review }) => {
               return (
                 <SwiperSlide key={id}>
                   <div className="flex md:gap-6 gap-2">
-                    <div className="text-secondary-foreground">
-                      
-                    </div>
+                    <div className="text-secondary-foreground"></div>
                     <div className="mt-16">
                       <p
                         className={cn(
                           `text-lg text-primary-foreground ${text_muted}`
                         )}
                       >
-                        <Image src={img} alt="img"/>                </p>
+                        <Image src={img} alt="img" className="w-[200px]" />
+                      </p>
                       <div className="relative after:absolute after:-left-5 after:top-0 after:w-[1px] after:h-full after:bg-primary ml-5 mt-6">
                         <h5
                           className={cn(
                             `text-primary-foreground font-extrabold leading-160 text-lg ${text_muted}`
                           )}
-                        >
-                         
-                        </h5>
+                        ></h5>
                         <p
                           className={cn(
                             `text-primary-foreground font-medium ${text_muted}`
                           )}
-                        >
-                        </p>
+                        ></p>
                       </div>
                     </div>
                   </div>

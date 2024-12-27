@@ -1,9 +1,9 @@
 export const addressList = [
     {
         id:"01",
-        country:"Azerbaijan:",
-        company:"AZALI MMC.",
-        address:"Bakı şəhəri, Suraxanı rayonu,Qaraçuxur qəsəbəsi,İlqar Musayev küçəsi, 51",
+        country:"Bakı şəhəri:",
+        company:"'AZALİ' MMC.",
+        address:"Bakı şəhəri, Suraxanı rayonu,Qaraçuxur qəsəbəsi, İlqar Musayev küçəsi, 51",
         phone:"+994 50 227 90 20",
         email:"info@azali.az",
         lat_lng:[40.39174449358235, 49.96908320554152]

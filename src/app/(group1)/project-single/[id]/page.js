@@ -1,18 +1,12 @@
 
 import Image from 'next/image'
-import bg_banner from "@/assets/images/borani/project-borani-1.jpg"
-import project_img_1 from "@/assets/images/borani/project-borani-2.jpg"
-import project_img_2 from "@/assets/images/borani/project-borani-3.jpg"
-// import project_img_2 from "@/assets/images/project-image-2.jpg"
 import RightArrow from '@/assets/icons/rightArrow'
 import ProjectSingleSliderOne from '@/components/section/projectSingle/projectSingleSliderOne'
 import Paragraph from '@/components/section/projectSingle/paragraph'
 import ProjectSingleSliderTwo from '@/components/section/projectSingle/projectSingleSliderTwo'
-import TeamTwo from '@/components/section/team/teamTwo'
 import Feedback from '@/components/section/feedback'
 import ButtonOutline from '@/components/ui/buttons/buttonOutline'
 import Title from '@/components/ui/title'
-import VideoPlay from '@/components/ui/videoPlay'
 import VideoPlay2 from '@/components/ui/videoPlay2'
 import { referansGalleryData } from '@/lib/fackData/referansGalleryData'
 
@@ -32,7 +26,7 @@ const ProjectSingle = ({ params }) => {
                     
                     <div className='w-full  '>
 
-                    <VideoPlay2 img={project.project_img1}   />
+                    <VideoPlay2 img={project.project_img1} video={project?.video}   />
                     </div>
                     <div className='container mt-[500px]  '>
                         <div className='grid lg:grid-cols-[65%_auto] gap-[38px]'>
@@ -76,9 +70,9 @@ const ProjectSingle = ({ params }) => {
                         </div>
                     </div>
                     <div className='container-fluid mt-30'>
-                        <div className='flex lg:flex-row flex-col gap-8'>
-                            <Image src={project.project_img2} loading='lazy'  placeholder='blur'    width={"auto"} height={"auto"} alt='img' className='w-full h-full' />
-                            <Image src={project.project_img3} loading='lazy'  placeholder='blur'    width={"auto"} height={"auto"} alt='img' className='w-full h-full' />
+                        <div className='grid lg:grid-cols-[1fr_2fr] grid-cols-1 gap-8'>
+                            <Image src={project.project_img2} loading='lazy' placeholder='blur' alt='img' className='h-full object-cover' />
+                            <Image src={project.project_img3} loading='lazy' placeholder='blur' alt='img' className='h-full object-cover' />
                         </div>
                     </div>
                     <Paragraph />

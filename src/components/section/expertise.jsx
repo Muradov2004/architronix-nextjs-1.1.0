@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from "framer-motion"
 import Image from 'next/image'
 import SectionTitle from '../ui/sectionTitle'
-import expertise_bg from "@/assets/images/expertise.jpg"
+import expertise_bg from "@/assets/images/expertise.webp"
 import Title from '../ui/title'
 import { cardSlideAnimation } from '@/lib/utils'
 import SectionSidebarImg from '../ui/sectionSidebarImg'
@@ -38,11 +38,11 @@ const Expertise = () => {
             <div className='container-fluid '>
                 <SectionTitle sectionName={"AZALI"} sectionTitle={"Hər xəttdə zəriflik və rahatlıq"} sectionDesc={"Şirkətimiz keyfiyyətin və qüsursuz zövqün simvoludur"} />
                 <div className='lg:mt-30 2sm:mt-20 mt-14 bg-secondary'>
-                    <div className='flex lg:flex-row flex-col items-center gap-15 '>
+                    <div className='flex lg:flex-row flex-col items-center gap-12 '>
                         <div>
                             <SectionSidebarImg img={expertise_bg} section_name={"Expertise-bg"} className={"w-full h-full"} />
                         </div>
-                        <div className='px-3 2xl:py-0 py-7 max-w-[609px] w-full'>
+                        <div className='px-8 2xl:py-0 py-7 max-w-[609px] w-full'>
                             <Title title_text={"Nə üçün Azali?"} className={"2xl:mb-20 mb-14"} />
                             <div className=''>
                                 {

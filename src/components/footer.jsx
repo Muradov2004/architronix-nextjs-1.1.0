@@ -19,7 +19,7 @@ const Footer = () => {
             {/* Sol Bölüm */}
             <div>
               <Link href="/home-1">
-                <Image src={Logo2} alt="Logo" height="20" width="150" />
+                <Image src={Logo2} alt="Logo" height="20" width="150" className="ml-4" />
               </Link>
               <br />
               <SocialMediaList />
@@ -34,14 +34,48 @@ const Footer = () => {
                 </h5>
                 <span className="w-[99px] h-[1px] bg-primary block my-2.5"></span>
                 <div className="flex flex-col">
-                  <Link href="/about-us" className="text-lg text-primary-foreground w-full">Haqqımızda </Link>
-                  <Link href="/products" className="text-lg text-primary-foreground w-full">
+                  <Link
+                    href="/about-us"
+                    className="text-lg text-primary-foreground w-full"
+                  >
+                    Haqqımızda{" "}
+                  </Link>
+                  <Link
+                    href="/products"
+                    className="text-lg text-primary-foreground w-full"
+                  >
                     Məhsullarımız
                   </Link>
-                  <Link href="/referance" className="text-lg text-primary-foreground w-full">Referans</Link>
-                  <Link href="/pdf/Azali-catalog.pdf" className="text-lg text-primary-foreground w-full">Kataloq </Link>
-                  <Link href="/career" className="text-lg text-primary-foreground w-full">Karyera </Link>
-                  <Link href="/contact" className="text-lg text-primary-foreground w-full">Əlaqə </Link>
+                  <Link
+                    href="/project-archive"
+                    className="text-lg text-primary-foreground w-full"
+                  >
+                    Layihələrimiz
+                  </Link>
+                  <Link
+                    href="/pdf/Azali-catalog.pdf"
+                    className="text-lg text-primary-foreground w-full"
+                  >
+                    Kataloq
+                  </Link>
+                  <Link
+                    href="/referance"
+                    className="text-lg text-primary-foreground w-full"
+                  >
+                    Referans
+                  </Link>
+                  <Link
+                    href="/blog-archive"
+                    className="text-lg text-primary-foreground w-full"
+                  >
+                    Bloq
+                  </Link>
+                  <Link
+                    href="/career"
+                    className="text-lg text-primary-foreground w-full"
+                  >
+                    Karyera
+                  </Link>
                 </div>
               </div>
             </div>
@@ -86,7 +120,15 @@ const Footer = () => {
               </div>
             </div>
             <div className="h-[300px] mt-5 md:h-full  md:mt-0">
-              <LeafletMap />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d759.6887420345012!2d49.9766645!3d40.392123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403063905a27c92b%3A0x74666340988018ea!2sAZALI%20Mebel!5e0!3m2!1saz!2saz!4v1735308418576!5m2!1saz!2saz"
+                
+                height="300"
+                style={{border:0}}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
 

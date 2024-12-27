@@ -8,7 +8,7 @@ import '/node_modules/react-modal-video/scss/modal-video.scss';
 import useOverflowHidden from '@/hooks/useOverflowHidden';
 import { cardSlideAnimation } from '@/lib/utils';
 
-const VideoPlay2 = ({ img }) => {
+const VideoPlay2 = ({ img,video="lfDZJqSrIuk" }) => {
     const [isOpen, setOpen] = useState(false);
     useOverflowHidden(isOpen)
     return (
@@ -25,7 +25,7 @@ const VideoPlay2 = ({ img }) => {
                     channel="youtube"
                     youtube={{ mute: 0, autoplay: 0 }}
                     isOpen={isOpen}
-                    videoId="lfDZJqSrIuk"
+                    videoId={video}
                     onClose={() => setOpen(false)}
                 />
 

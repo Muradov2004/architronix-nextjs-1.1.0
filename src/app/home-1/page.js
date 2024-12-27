@@ -2,11 +2,9 @@ import React from 'react'
 import AboutOne from '@/components/section/about/aboutOne'
 import Gallery from '@/components/section/gallery'
 import BannerOne from '@/components/section/heroes/bannerOne'
-import ServicesSlider from '@/components/section/servicesSlider'
 import VideoPortfolio from '@/components/section/videoPortfolio'
 import ProjectsSlider from '@/components/section/projectsSlider'
 import Testimonial from '@/components/section/testimonial'
-import ShopSlider from '@/components/section/shopSlider'
 import BlogSlider from '@/components/section/blogSlider'
 import Feedback from '@/components/section/feedback'
 import Counter from '@/components/ui/counter'
@@ -21,8 +19,8 @@ import { bannerOneData } from '@/lib/fackData/bannerOneData'
 import Faq from '@/components/section/faq'
 
 export const metadata = {
-  title: "Architronix -- Home-1",
-  description: "Architronix is a next js and tailwind css website",
+  title: "Azali -- Home-1",
+  description: "Azali is a next js and tailwind css website",
 };
 
 const Home1 = () => {
