@@ -18,6 +18,7 @@ import { referansGalleryData } from '@/lib/fackData/referansGalleryData'
 const ProjectSingle = ({ params }) => {
     const { id } = params;
     const project = referansGalleryData.find((item) => item.id === parseInt(id));
+    console.log(project?.video);
     return (
         <>
             <section className='blog-single'>

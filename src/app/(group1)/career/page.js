@@ -45,7 +45,7 @@ const Career = () => {
                 <div className="grid w-full gap-5">
                   <form className="w-full space-y-4">
                     <InputFiled
-                      placeholderc={"Adı ve Soyadı"}
+                      placeholderc={"Adı  Soyadı"}
                       type={"text"}
                       className={"w-full"}
                     />

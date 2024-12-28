@@ -36,7 +36,7 @@ const SingleProject = ({params}) => {
                     
                     <div className='w-full  '>
 
-                    <VideoPlay2 img={bg_banner}   />
+                    <VideoPlay2 img={bg_banner} video=''  />
                     </div>
                     <div className='container mt-[500px]  '>
                         <div className='grid lg:grid-cols-[65%_auto] gap-[38px]'>

@@ -52,7 +52,7 @@ const CategoryNavbar = ({
   return (
     <header className="w-full flex justify-center py-6 bg-gray-100">
       {/* Desktop Navbar */}
-      <div className="container-fluid">
+      <div className="container-fluid ">
         <div>
           <Swiper
             spaceBetween={10}
@@ -70,19 +70,18 @@ const CategoryNavbar = ({
             pagination={pagination}
             loop={true}
             modules={[Pagination, Navigation]}
-            style={!dropdown ? { height: "100%" } : { height: "400px" }}
+            
           >
             {menuListTwo.map(({ id, name, isDropdown, isMegaMenu }) => (
               <SwiperSlide key={id}>
-                <li key={id} className="group relative">
+       <li key={id} className="group relative">
   <button
     className={`text-lg font-medium w-40 h-12 ${
       selectedCategory === name
         ? "bg-primary text-white"
         : "bg-secondary text-black"
     } shadow-md hover:bg-primary hover:text-white transition-colors duration-300 flex items-center justify-center`}
-    onClick={() => handleCategorySelect(name, isDropdown || isMegaMenu, id)}
-    onMouseEnter={() => setDropDown(true)}
+    // onMouseEnter={() => setDropDown(true)} // Dropdown açılır
   >
     {name}
     {(isDropdown || isMegaMenu) && (
@@ -99,27 +98,17 @@ const CategoryNavbar = ({
       </span>
     )}
   </button>
-  {/* Dropdown or MegaMenu should also respond to hover */}
-  {(isDropdown || isMegaMenu) && dropdown && (
-    <div
-      className="absolute z-10 w-64 bg-white shadow-lg rounded-md"
-      onMouseEnter={() => setDropDown(true)}
-      onMouseLeave={() => setDropDown(false)}
-    >
-      {isDropdown && (
-        <DropDownMenu
-          dropDownList={isDropdown}
-          parentId={id}
-          bgColor={"bg-primary"}
-          setSelectedSubCategory={setSelectedSubCategory}
-          setSelectedCategory={setSelectedCategory}
-          setTitle={setTitle}
-        />
-      )}
-      {isMegaMenu && (
-        <MegaMenuTwo dropDownList={isMegaMenu} parentId={id} />
-      )}
-    </div>
+
+  {/* Dropdown menü */}
+  {isDropdown  && (
+    <DropDownMenu
+      dropDownList={isDropdown}
+      parentId={id}
+      bgColor={"bg-primary"}
+      setSelectedSubCategory={setSelectedSubCategory}
+      setSelectedCategory={setSelectedCategory}
+      setTitle={setTitle}
+    />
   )}
 </li>
 

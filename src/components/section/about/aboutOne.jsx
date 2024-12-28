@@ -95,7 +95,7 @@ const AboutOne = ({ text_muted, bg_muted }) => {
                 <Link href="/about-us" className="inline-block">
                   <ButtonOutline
                     className={
-                      "border-secondary text-secondary-foreground sm:px-10 px-3 after:hover:bg-secondary after:left-0 hover:text-primary-foreground"
+                      "border-secondary text-secondary-foreground sm:px-10 px-3 after:left-0 hover:bg-secondary-foreground hover:text-primary-foreground"
                     }
                   >
                     Ətraflı

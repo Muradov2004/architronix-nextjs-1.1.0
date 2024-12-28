@@ -10,7 +10,7 @@ const DropDownMenu = ({ dropDownList, parentId ,setSelectedSubCategory,setSelect
     }
   return (
     <div
-      className={`absolute z-50 flex max-h-0 py-0 overflow-hidden transition-all duration-500 group-hover:max-h-[300px] group-hover:py-5`}
+      className={`relative z-auto flex max-h-0 py-0 overflow-hidden transition-all duration-500 group-hover:max-h-[300px] group-hover:py-5`}
       style={{ backgroundColor: 'var(--primary)' }} // Burada arka plan rengi CSS değişkeni ile tanımlandı
     >
       <ul className="min-w-60 px-6">
@@ -22,6 +22,7 @@ const DropDownMenu = ({ dropDownList, parentId ,setSelectedSubCategory,setSelect
                 data-id={parentId}
                 className="dropdown-item text-secondary-foreground text-base font-medium inline-block relative after:transition-all after:duration-700 after:absolute after:left-0 after:bottom-0 after:contents-[''] after:w-0 after:h-[2px] after:bg-secondary after:hover:w-full"
                 onClick={() => handleSubCategorySelect(name)}
+                
               >
                 {name}
               </button>

@@ -18,7 +18,7 @@ const AboutTwo = () => {
                             <div className='max-w-[533px] lg:pt-0 pt-20 lg:pb-0 pb-10'>
                                 <h2 className='text-secondary-foreground text-3xl 2sm:text-4xl font-bold leading-120 mb-14 max-w-[400px]'>"AZALİ" MMC</h2>
                                 <p className=' text-secondary-foreground'>
-                                "AZALİ” MMC şirkəti, mebel və metal mebel istehsalı sahəsində böyük uğurlara imza atmış şirkətlərindən biridir. Şirkətin məqsədi müasir dizaynları əks etdirən layihələr həyata keçirmək, onların keyfiyyətlə bağlı gözləntilərini reallaşdırmaq, eyni zamanda müştərilərin qiymət seçimi üçün ən uyğun alternativ təklif etməkdir.
+                                "AZALİ" MMC şirkəti, mebel və metal mebel istehsalı sahəsində böyük uğurlara imza atmış şirkətlərindən biridir. Şirkətin məqsədi müasir dizaynları əks etdirən layihələr həyata keçirmək, onların keyfiyyətlə bağlı gözləntilərini reallaşdırmaq, eyni zamanda müştərilərin qiymət seçimi üçün ən uyğun alternativ təklif etməkdir.
 
                                 </p>
                                 <p className='text-secondary-foreground mt-7'>

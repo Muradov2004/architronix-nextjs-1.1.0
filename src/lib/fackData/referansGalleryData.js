@@ -148,16 +148,16 @@ import ravy7 from "@/assets/layiheler/project-ravy-7.jpg";
 import ravy8 from "@/assets/layiheler/project-ravy-8.jpg";
 import ravy9 from "@/assets/layiheler/project-ravy-9.jpg";
 
-import zabratReferance from "@/assets/layiheler/referans-ravy.jpg";
-import zabrat1 from "@/assets/layiheler/project-mado-1.jpg";
-import zabrat2 from "@/assets/layiheler/project-mado-2.jpg";
-import zabrat3 from "@/assets/layiheler/project-mado-3.jpg";
-import zabrat4 from "@/assets/layiheler/project-mado-4.jpg";
-import zabrat5 from "@/assets/layiheler/project-mado-5.jpg";
-import zabrat6 from "@/assets/layiheler/project-mado-6.jpg";
-import zabrat7 from "@/assets/layiheler/project-mado-7.jpg";
-import zabrat8 from "@/assets/layiheler/project-mado-8.jpg";
-import zabrat9 from "@/assets/layiheler/project-mado-9.jpg";
+import zabratReferance from "@/assets/layiheler/referans-zabrat-mall.jpg";
+import zabrat1 from "@/assets/layiheler/project-zabrat-mall-1.jpg";
+import zabrat2 from "@/assets/layiheler/project-zabrat-mall-2.jpg";
+import zabrat3 from "@/assets/layiheler/project-zabrat-mall-3.jpg";
+import zabrat4 from "@/assets/layiheler/project-zabrat-mall-4.jpg";
+import zabrat5 from "@/assets/layiheler/project-zabrat-mall-5.jpg";
+import zabrat6 from "@/assets/layiheler/project-zabrat-mall-6.jpg";
+import zabrat7 from "@/assets/layiheler/project-zabrat-mall-7.jpg";
+import zabrat8 from "@/assets/layiheler/project-zabrat-mall-8.jpg";
+import zabrat9 from "@/assets/layiheler/project-zabrat-mall-9.jpg";
 
 export const referansGalleryData = [
   {
@@ -462,14 +462,14 @@ export const referansGalleryData = [
     project_type: "Private House",
     link: "/project-single/14",
     location: "US",
-    project_img1: project_img_1,
-    project_img2: project_img_1,
-    project_img3: project_img_1,
-    project_img4: project_img_1,
-    project_img5: project_img_1,
-    project_img6: project_img_1,
-    project_img7: project_img_1,
-    project_img8: project_img_1,
-    project_img9: project_img_1,
+    project_img1: zabrat1,
+    project_img2: zabrat2,
+    project_img3: zabrat3,
+    project_img4: zabrat4,
+    project_img5: zabrat5,
+    project_img6: zabrat6,
+    project_img7: zabrat7,
+    project_img8: zabrat8,
+    project_img9: zabrat9,
   },
 ];

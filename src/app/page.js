@@ -6,13 +6,16 @@ import Header from '@/components/preview/header'
 import Banner from '@/components/preview/banner'
 import Demos from '@/components/preview/demos'
 import Footer from '@/components/footer'
+import Home1 from './home-1/page'
+import HeaderOne from '@/components/header/headerOne'
 
 const Home = () => {
   return (
     <>
-      <Header />
-      <Banner />
-      <Demos />
+      <HeaderOne />
+      {/* <Banner />
+      <Demos /> */}
+      <Home1/>
       <Footer />
     </>
   )

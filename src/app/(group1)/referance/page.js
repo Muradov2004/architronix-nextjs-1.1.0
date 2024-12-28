@@ -10,7 +10,7 @@ const Referance = () => {
     <div className="mt-0 mb-20 md:mb-32">
       <ReferanceSlider />
     </div>
-    <div className="-mt-32 md:-mt-48 mb-32">
+    <div className="-mt-32 md:-mt-56 mb-32">
       <Testimonial check={true} show={false} />
     </div>
     <Feedback/>
