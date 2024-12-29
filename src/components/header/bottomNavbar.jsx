@@ -23,20 +23,16 @@ import Flag1 from "@/assets/referances/azerbaijan.png";
 import Flag2 from "@/assets/referances/world.png";
 import Flag3 from "@/assets/referances/united-states-of-america.png";
 
-
-
-
 const BottomNavbar = ({ linkColor }) => {
   const { products } = useSelector((state) => state.addToCart);
   const [offcanvaseActive, setOffcanvaseActive] = useState(false);
 
   const [selectedLanguage, setSelectedLanguage] = useState("EN");
 
-  
-
   const languageMenu = [
-    {id: 1,
-      name: selectedLanguage,  
+    {
+      id: 1,
+      name: selectedLanguage,
       path: "#",
       isMegaMenu: false,
       isDropdown: [
@@ -44,23 +40,22 @@ const BottomNavbar = ({ linkColor }) => {
           id: 1,
           name: "AZ",
           path: "#",
-          flag:Flag1,
+          flag: Flag1,
         },
         {
           id: 2,
           name: "EN",
           path: "#",
-          flag:Flag3,
-
+          flag: Flag3,
         },
         {
           id: 3,
           name: "RU",
           path: "#",
-          flag:Flag2,
-
+          flag: Flag2,
         },
-      ],}
+      ],
+    },
   ];
   useStickyHeader(linkColor);
   const pathName = usePathname();
@@ -118,51 +113,55 @@ const BottomNavbar = ({ linkColor }) => {
               );
             })}
             <div>
-       <ul>
-       {languageMenu.map(({ id, isDropdown, name, path, isMegaMenu }) => {
-              return (
-                <li key={id} className="group">
-                  <Link
-                    href={path}
-                    data-id={id}
-                    className={cn(
-                      `nav-link text-xl font-medium px-7 py-[36px] flex items-center group-hover:bg-primary group-hover:text-secondary-foreground ${linkColor}`
-                    )}
-                  >
-                    {name}
-                    {(isDropdown || isMegaMenu) && (
-                      <span
-                        className={`transition-all duration-500 rotate-180 group-hover:rotate-0 group-hover:text-secondary-foreground`}
-                      >
-                        <svg
-                          width="12"
-                          height="9"
-                          viewBox="0 0 12 9"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
+              <ul>
+                {languageMenu.map(
+                  ({ id, isDropdown, name, path, isMegaMenu }) => {
+                    return (
+                      <li key={id} className="group">
+                        <Link
+                          href={path}
+                          data-id={id}
+                          className={cn(
+                            `nav-link text-xl font-medium px-7 py-[36px] flex items-center group-hover:bg-primary group-hover:text-secondary-foreground ${linkColor}`
+                          )}
                         >
-                          <path d="M11 8L6 2L1 8" />
-                        </svg>
-                      </span>
-                    )}
-                  </Link>
-                  {/* Dropdown Menüsü */}
-                  {isDropdown?.length && (
-                    <LanguageDropDown dropDownList={isDropdown} setLanguage={setSelectedLanguage}  parentId={id} />
-                  )}
-                  {/* Mega Menü */}
-                  {isMegaMenu?.length && (
-                    <MegaMenu dropDownList={isMegaMenu} parentId={id} />
-                  )}
-                </li>
-              );
-            })}
-       </ul>
-        </div>
+                          {name}
+                          {(isDropdown || isMegaMenu) && (
+                            <span
+                              className={`transition-all duration-500 rotate-180 group-hover:rotate-0 group-hover:text-secondary-foreground`}
+                            >
+                              <svg
+                                width="12"
+                                height="9"
+                                viewBox="0 0 12 9"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M11 8L6 2L1 8" />
+                              </svg>
+                            </span>
+                          )}
+                        </Link>
+                        {/* Dropdown Menüsü */}
+                        {isDropdown?.length && (
+                          <LanguageDropDown
+                            dropDownList={isDropdown}
+                            setLanguage={setSelectedLanguage}
+                            parentId={id}
+                          />
+                        )}
+                        {/* Mega Menü */}
+                        {isMegaMenu?.length && (
+                          <MegaMenu dropDownList={isMegaMenu} parentId={id} />
+                        )}
+                      </li>
+                    );
+                  }
+                )}
+              </ul>
+            </div>
           </ul>
-          
         </nav>
-        
       </div>
       <Offcanvas
         setOffcanvaseActive={setOffcanvaseActive}

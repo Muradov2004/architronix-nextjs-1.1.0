@@ -86,15 +86,7 @@ const SectionTitle = ({
             >
               {char}
               <span
-                style={{
-                  top: "32%", // Varsayılan pozisyon
-                  left: "65%",
-                  transform: "translate(-50%, -50%)",
-                  width: "88%",
-                  height: "90%",
-                }}
-                className={cn("absolute xl:left-[64%] 2xl:left-[63%]")}
-              >
+                className="absolute w-[89%] top-[3px] left-[3px] xl:top-[8px] xl:left-[6px]">
                 <Image
                   src={qoz}
                   alt="Qoz"

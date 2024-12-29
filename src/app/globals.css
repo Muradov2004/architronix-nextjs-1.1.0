@@ -36,7 +36,96 @@ body {
 
     --radius: 8px;
   }
-
+  @media (max-width: 1800px) {
+    .qoz-image {
+      top: 3vh; /* 5xl ekran boyutunda */
+      left: 3vw;
+      width: 70%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 1700px) {
+    .qoz-image {
+      top: 3.5vh; /* 4xl ekran boyutunda */
+      left: 3.2vw;
+      width: 72%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 1600px) {
+    .qoz-image {
+      top: 4vh; /* 3xl ekran boyutunda */
+      left: 3.5vw;
+      width: 75%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .qoz-image {
+      top: 5vh; /* 2xl ekran boyutunda */
+      left: 4vw;
+      width: 80%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .qoz-image {
+      top: 6vh; /* xl ekran boyutunda */
+      left: 5vw;
+      width: 85%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .qoz-image {
+      top: 7vh; /* lg ekran boyutunda */
+      left: 6vw;
+      width: 90%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 960px) {
+    .qoz-image {
+      top: 8vh; /* md ekran boyutunda */
+      left: 7vw;
+      width: 95%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .qoz-image {
+      top: 10vh; /* 2sm ekran boyutunda */
+      left: 8vw;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .qoz-image {
+      top: 12vh; /* sm ekran boyutunda */
+      left: 10vw;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 340px) {
+    .qoz-image {
+      top: 15vh; /* xm ekran boyutunda */
+      left: 12vw;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
   .dark {
     --background: #06060e;
 
