@@ -22,6 +22,7 @@ const CategoryNavbar = ({
     el: ".progressbar-pagination",
     type: "progressbar",
   };
+  console.log("select",setSelectedCategory);
 
   const handleCategorySelect = (categoryName, isDropdown, id) => {
     console.log(
@@ -29,7 +30,7 @@ const CategoryNavbar = ({
     );
     if (isDropdown) {
       // Dropdown'ı aç/kapat
-      setDropDown(true);
+      
       setActiveCategory((prev) => (prev === id ? null : id));
     } else {
       // Dropdown'ı kapat ve kategori seçimini güncelle
@@ -37,7 +38,7 @@ const CategoryNavbar = ({
       setSelectedSubCategory(null);
       setSelectedCategory(categoryName);
       setActiveCategory(null);
-      setDropDown(false);
+     
     }
     console.log(`Active Category: ${activeCategory}`);
   };
@@ -81,7 +82,9 @@ const CategoryNavbar = ({
         ? "bg-primary text-white"
         : "bg-secondary text-black"
     } shadow-md hover:bg-primary hover:text-white transition-colors duration-300 flex items-center justify-center`}
+    // onClick={()=> setSelectedCategory(name)}
     // onMouseEnter={() => setDropDown(true)} // Dropdown açılır
+    onClick={() => handleCategorySelect(name, isDropdown || isMegaMenu, id)}
   >
     {name}
     {(isDropdown || isMegaMenu) && (

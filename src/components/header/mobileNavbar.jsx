@@ -212,11 +212,11 @@ const MobileNavbar = () => {
             </div>
           </div>
         </div>
-        {/* <Offcanvas
+        <Offcanvas
           setOffcanvaseActive={setOffcanvaseActive}
           offcanvaseActive={offcanvaseActive}
         />
-        <Cart setCartActive={setCartActive} cartActive={cartActive} /> */}
+        <Cart setCartActive={setCartActive} cartActive={cartActive} />
       </div>
     </div>
   );
