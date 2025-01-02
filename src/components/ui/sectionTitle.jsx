@@ -7,6 +7,7 @@ import RightArrow from "@/assets/icons/rightArrow";
 import ButtonOutline from "./buttons/buttonOutline";
 import Image from "next/image";
 import qoz from "@/assets/images/newQoz.png";
+import azali from "@/assets/images/AZALI.png";
 import localfont from "next/font/local";
 
 const custom_jakarta = localfont({
@@ -85,8 +86,7 @@ const SectionTitle = ({
               style={{ fontSize: "inherit", lineHeight: "1" }}
             >
               {char}
-              <span
-                className="absolute w-[89%] top-[3px] left-[3px] xl:top-[8px] xl:left-[6px]">
+              <span className="absolute w-[89%] top-[3px] left-[3px] xl:top-[8px] xl:left-[6px]">
                 <Image
                   src={qoz}
                   alt="Qoz"
@@ -111,7 +111,9 @@ const SectionTitle = ({
         <motion.div
           style={{ translateX: scrollValue, transitionDuration: "1s" }}
         >
-          <h1 className={`text-transparent webkit-text-stroke-width-1 webkit-text-stroke-primary opacity-20 xl:text-[324px] lg:text-[200px] md:text-[170px] sm:text-[140px] text-[100px] whitespace-nowrap font-extrabold leading-135 ${custom_aquire.className} `}>
+          <h1
+            className={`text-transparent webkit-text-stroke-width-1 webkit-text-stroke-primary opacity-20 xl:text-[324px] lg:text-[200px] md:text-[170px] sm:text-[140px] text-[100px] whitespace-nowrap font-extrabold leading-135 ${custom_aquire.className} `}
+          >
             {sectionName}
           </h1>
         </motion.div>
@@ -124,17 +126,26 @@ const SectionTitle = ({
           )}
         >
           {/* Section Title */}
-          <h2
-            className={cn(
-              `[font-size:_clamp(48px,7vw,130px)] font-extrabold leading-110 text-primary-foreground mb-5  ${text_muted} ${
-                sectionTitle === "AZALI" ? custom_aquire.className
-                  : ""
-              }`
-            )}
-          >
-            {renderTitleWithImage(sectionTitle, wrapIIndices)}
-          </h2>
-
+          {!(sectionTitle === "AZALI") ? (
+            <h2
+              className={cn(
+                `[font-size:_clamp(48px,7vw,130px)] font-extrabold leading-110 text-primary-foreground mb-5  ${text_muted} ${
+                  sectionTitle === "AZALI" ? custom_aquire.className : ""
+                }`
+              )}
+            >
+              {renderTitleWithImage(sectionTitle, wrapIIndices)}
+            </h2>
+          ) : (
+            <Image
+              src={azali}
+              alt="AZALI"
+              style={{
+                width: "37%",
+                objectFit: "contain",
+              }}
+            />
+          )}
           <span
             className={cn(`block w-[300px] h-[1px] bg-primary ${bg_muted}`)}
           ></span>
