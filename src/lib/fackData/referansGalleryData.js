@@ -203,7 +203,7 @@ export const referansGalleryData = [
     project_img7: borani7,
     project_img8: borani8,
     project_img9: borani9,
-    video: "FnrGnewt3CI?si=eypxQ-DLe5xU_hDI",
+    video: "FnrGnewt3CI",
   },
   {
     id: 3,
@@ -248,7 +248,7 @@ export const referansGalleryData = [
     project_img7: boraniNeft7,
     project_img8: boraniNeft8,
     project_img9: boraniNeft9,
-    video:"kQ9gQFtiu_4?si=OkIfac62j-ynK_IQ"
+    video:"kQ9gQFtiu_4"
   },
   {
     id: 5,
@@ -315,7 +315,7 @@ export const referansGalleryData = [
     project_img7: grand7,
     project_img8: grand8,
     project_img9: grand9,
-    video:"0o9wC-Yy2OA?si=_A3GCzhveS0NJ7QG"
+    video:"0o9wC-Yy2OA"
   },
   {
     id: 8,
@@ -338,7 +338,7 @@ export const referansGalleryData = [
     project_img7: macara7,
     project_img8: macara8,
     project_img9: macara9,
-    video: "Z6tBVN9JpSg?si=wAxryti0aRXuEnR8",
+    video: "Z6tBVN9JpSg",
   },
   {
     id: 9,

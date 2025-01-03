@@ -5,7 +5,6 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import Letter from "@/assets/images/letter.png";
 import LetterOpen from "@/assets/images/newImages/Letter_2.png";
-import Steam from "@/assets/images/newImages/steam.png";
 import RightArrow from "@/assets/icons/rightArrow";
 import { cn } from "@/lib/utils";
 import ButtonFill from "../ui/buttons/buttonFill";
@@ -13,21 +12,19 @@ import { projectsData } from "@/lib/fackData/projectsData";
 import SectionTitle from "../ui/sectionTitle";
 import Image from "next/image";
 import { referanceData } from "@/lib/fackData/referanceData";
-import { log } from "react-modal/lib/helpers/ariaAppHider";
 
 const ReferanceSlider = ({ text_muted, bg_muted }) => {
-  const [showLetterOpenImage, setShowLetterOpenImage] = useState(false);
-  const [showLetterImage, setShowLetterImage] = useState(true);
+  const [openedLetters, setOpenedLetters] = useState([]); // State to track opened letters
   const swiperRef = useRef();
 
-  const handleLogoClick = () => {
-    setShowLetterOpenImage(true);
-    setShowLetterImage(false);
+  const handleOpenLetter = (id) => {
+    if (!openedLetters.includes(id)) {
+      setOpenedLetters([...openedLetters, id]);
+    }
   };
 
-  const handleCloseLetter = () => {
-    setShowLetterOpenImage(false);
-    setShowLetterImage(true);
+  const handleCloseLetter = (id) => {
+    setOpenedLetters(openedLetters.filter((openedId) => openedId !== id));
   };
 
   const pagination = {
@@ -42,12 +39,6 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
     },
   };
 
-  const handleSlideChange = () => {
-    // Kaydırma işlemi gerçekleştiğinde setShowLetterOpenImage(false) olacak
-    setShowLetterOpenImage(false);
-    setShowLetterImage(true);
-  };
-
   return (
     <section className="pt-10 md:pt-20">
       <div className="container-fluid">
@@ -59,7 +50,7 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
           }
         />
       </div>
-      <div className="container-fluid relative mt-20  lg:pt-10 2sm:pt-8 pt-5">
+      <div className="container-fluid relative mt-20 lg:pt-10 2sm:pt-8 pt-5">
         <Swiper
           slidesPerView={1}
           loop
@@ -71,7 +62,6 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
             swiperRef.current = swiper;
           }}
           modules={[Pagination, Navigation, Autoplay]}
-          onSlideChange={handleSlideChange} 
         >
           {referanceData.map(
             ({ id, logo, letter, project_img, project_type, project_year }) => (
@@ -90,11 +80,9 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
                     <div className="flex justify-center xl:justify-start items-center xl:items-end flex-col xl:flex-row gap-5 md:ml-20 mt-5">
                       <div className="flex items-end sm:gap-5 gap-2">
                         <div
-                          onClick={() => {
-                            swiperRef.current?.slidePrev();
-                            setShowLetterOpenImage(false);
-                            setShowLetterImage(true);
-                          }}
+onClick={() => {
+  swiperRef.current?.slidePrev();
+}}
                         >
                           <ButtonFill
                             className={
@@ -106,9 +94,7 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
                         </div>
                         <div
                           onClick={() => {
-                            swiperRef.current?.slideNext(); // İlk fonksiyon
-                            setShowLetterOpenImage(false); // İkinci fonksiyon
-                            setShowLetterImage(true);
+                            swiperRef.current?.slideNext();
                           }}
                         >
                           <ButtonFill
@@ -125,10 +111,24 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
 
                   {/* Sağ taraf: Letter */}
                   <div className="w-full  lg:w-1/2 h-full flex justify-center items-center relative mt-5 lg:mt-0 ">
-                    {showLetterImage && (
+                    {openedLetters.includes(id) ? (
+                      <div className="relative flex justify-center items-center mt-5 lg:mt-0 mb-60 2xl:mb-80  mr-[10%] 2sm:mr-[25%]">
+                        <Image
+                          src={letter}
+                          alt="Letter Open"
+                          className="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px]"
+                        />
+                        <button
+                        onClick={() => handleCloseLetter(id)}
+                          className="absolute top-10 right-2 bg-black text-white p-2 rounded-full text-sm"
+                        >
+                          X
+                        </button>
+                      </div>
+                    ) : (
                       <div
                         className="cursor-pointer mr-[10%] 2sm:mr-[25%]"
-                        onClick={handleLogoClick}
+                        onClick={() => handleOpenLetter(id)}
                       >
                         <Image
                           src={Letter}
@@ -143,21 +143,6 @@ const ReferanceSlider = ({ text_muted, bg_muted }) => {
                             Click Me!
                           </span>
                         </div>
-                      </div>
-                    )}
-                    {showLetterOpenImage && (
-                      <div className="relative flex justify-center items-center mt-5 lg:mt-0 mb-60 2xl:mb-80  mr-[10%] 2sm:mr-[25%]">
-                        <Image
-                          src={letter}
-                          alt="Letter Open"
-                          className="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px]"
-                        />
-                        <button
-                          onClick={handleCloseLetter}
-                          className="absolute top-10 right-2 bg-black text-white p-2 rounded-full text-sm"
-                        >
-                          X
-                        </button>
                       </div>
                     )}
                   </div>

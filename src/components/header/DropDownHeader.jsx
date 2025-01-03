@@ -4,7 +4,7 @@ import React from 'react'
 
 const DropDownHeader = ({dropDownList, bgColor, parentId}) => {
     return (
-        <div className={cn(`absolute z-50 bg-primary flex max-h-0 py-0 overflow-hidden  transition-all duration-500 max-w-[126px] group-hover:max-h-[300px] group-hover:py-5 ${bgColor}`)}>
+        <div className={cn(`absolute z-[1000] bg-primary flex max-h-0 py-0 overflow-hidden  transition-all duration-500 max-w-[126px] group-hover:max-h-[300px] group-hover:py-5 ${bgColor}`)}>
             <ul className='min-w-60 px-6'>
                 {
                     dropDownList.slice(0, 6).map(({ id, name, path }) => {

@@ -32,7 +32,7 @@ const TeamCardOne = ({ img, social_link, name, position, text_muted, cardVariant
       <div className='relative group hover-underline'>
         <div className='relative'>
       
-          <Image src={img} loading='lazy'  placeholder='blur' blurDataURL={staticBluarDataUrl} width={"auto"} height={"auto"} alt={name} className='w-full h-full' />
+          <Image src="https://archive.org/download/instagram-plain-round/instagram%20dip%20in%20hair.jpg" width={"415"} height={"500"} loading='lazy'  placeholder='blur' blurDataURL={staticBluarDataUrl} alt={name} className='w-[415px] h-[500px] object-cover' />
         </div>
         <div className='bg-secondary  absolute left-0 bottom-[-10%] min-w-[295px] transition-all duration-500 group-hover:min-w-full'>
           <div >

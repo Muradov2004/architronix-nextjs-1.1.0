@@ -16,8 +16,8 @@ export const teamData = [
     {
         id: 1,
         img: team_1,
-        name: "Məhərrəm Əhmədov",
-        position: "Baş menecer",
+        name: "Anar Zeynalov",
+        position: "Direktor",
         social_link: [
             {
                 id: 1,
@@ -78,8 +78,8 @@ export const teamData = [
     {
         id: 2,
         img: team_2,
-        name: "Anar Zeynalov",
-        position: "Direktor",
+        name: "Məhərrəm Əhmədov",
+        position: "Baş menecer",
         social_link: [
             {
                 id: 1,
